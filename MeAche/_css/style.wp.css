@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: rgb(30, 30, 30);
 }
@@ -19,8 +19,10 @@ body {
   height: 60px;
 }
 
-#categorias {
+#categorias {  
+  margin: 0  auto;
   margin-bottom: 20vh;
+  max-width: 600px;
 }
 
 @media only screen and (min-height: 750px) {

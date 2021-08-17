@@ -11,6 +11,7 @@ for(let i = 0; i <= telaPratos.length; i++) {
         }
 
         closeTela[i].addEventListener('click', () => {
+            console.log(closeTela[i])
             if(telaPratos[i].style.display === 'block') {
                 telaPratos[i].style.display = 'none';
             }
