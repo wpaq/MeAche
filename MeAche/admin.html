@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Admin | Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="_css/bootstrap.min.css">
+    <!-- Custom style CSS -->
+    <link rel="stylesheet" type="text/css" href="_css/style.admin.css">
+    <link rel="stylesheet" href="_css/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="_css/icon.css">
+    <!-- Load the Firebase library before loading the body. -->
+    <script src="_js/firebase.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="_jquery/jquery-2.2.0.min.js"></script>
+    <script src="_jquery/popper.min.js"></script>
+    <script src="_js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="logo" class="w3-center"> <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png"> </div>
+    <hr id="barra">
+
+    <div class="container">
+        <div>
+            <button id="collapse6" class="btn btn-secondary accordion-toggle estiloButton" type="button" aria-expanded="true" data-toggle="collapse" data-target="#collapseOne" onclick="arrows6()">
+                <span>Pedidos Pendentes</span>
+                <i class="fas fa-angle-down w3-right" id="arrowDown6" style="display: none;"></i>
+                <i class="fas fa-angle-up w3-right" id="arrowUp6" style="display: block;"></i>
+            </button>
+        </div>
+        <div class="collapse in show" id="collapseOne">
+            <table class="table users-table">
+                <thead>
+                    <tr>
+                        <th scope="row"></th>
+                        <th>Pedidos</td>
+                        <th>Nº Pedidos</td>
+                    </tr>
+                </thead>
+                <tbody id="pedidos_pendentes">
+                </tbody>
+            </table>
+        </div>
+      <br>
+      <br>
+      <div>
+        <button id="collapse7" class="btn btn-secondary accordion-toggle estiloButton" aria-expanded="false" type="button" data-toggle="collapse" data-target="#collapseTwo" onclick="arrows7()">
+            <span>Pedidos Concluídos</span>
+            <i class="fas fa-angle-down w3-right" id="arrowDown7" style="display: block;"></i>
+            <i class="fas fa-angle-up w3-right" id="arrowUp7" style="display: none;"></i>
+        </button>
+      </div>
+        <div class="collapse" id="collapseTwo">
+            <table class="table users-table">
+                <thead class="w3-center">
+                    <tr>
+                        <th scope="row"></th>
+                        <th>Pedidos</td>
+                        <th>Nº Pedidos</td>
+                    </tr>
+                </thead>
+                <tbody id="pedidos_concluidos" class="w3-center">
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+
+</body>
+<!-- Connection Firebase JS -->
+<script type="text/javascript" src="_js/connection.firebase.js"></script>
+<script type="text/javascript" src="_js/application.js"></script>
+<!-- Functions JS -->
+<script type="text/javascript" src="_js/checkbox.js"></script>
+<script type="text/javascript" src="_js/createTable.js"></script>
+<script type="text/javascript" src="_js/user.functions.js"></script>
+
+</html>

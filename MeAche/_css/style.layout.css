@@ -1,0 +1,360 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: rgb(30, 30, 30);
+}
+
+/*Imagem*/
+
+
+#img-logo {
+  width: 25%;
+}
+
+
+@media only screen and (min-height: 750px) {
+  #img-logo {
+    width: 13%;
+  }
+}
+
+@media only screen and (min-height: 970px) {
+  #img-logo {
+    width: 11%;
+  }
+}
+
+@media only screen and (min-height: 1140px) {
+  #img-logo {
+    width: 7%;
+  }
+}
+
+
+/* HR */
+
+#barra {
+  margin-left: 37%;
+  width: 25%;
+  border-width: 4px;
+  border-color: #F05F40;
+}
+
+
+/* Cardápio*/
+
+.categoria{
+  background-color: #E50914;
+}
+
+.menuTitulo {
+  font-size: 175%;
+  font-style: bold;
+  display: inline-block;
+}
+
+
+
+.pratos {
+  display: inline-block;
+  width: 100%;
+}
+
+.menu {
+  margin-left: -15px;
+  margin-right: 25px;
+}
+
+@media only screen and (min-height: 750px) {
+  #categorias {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+
+/*Barra do Subtotal*/
+
+#subtotal {
+  background-color: #2a2829;
+  height: 70px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width:100%;
+}
+
+.footer h3 span {
+  font-size: 20px;
+  vertical-align: middle; 
+}
+
+
+/*Span Pedido Parte 1*/
+
+span.psw {
+  float: right;
+}
+
+.fundo-span {
+  background-color: #363434;
+  display: none; 
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+    
+}
+
+#meu-pedido{
+  border-bottom: solid;
+  border-color: grey;
+height: 60px;
+
+}
+.close1 {
+  position: absolute;
+   margin-top: 0%;
+   color: white;
+   font-size: 29px;
+   font-weight: bold;
+}
+
+
+.close1:hover,
+.close1:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+
+#total-parcial {
+  width: 100%;
+  position: fixed;
+    bottom: 0;
+  font-size: 18px;
+}
+}
+
+#preco-subtotal{
+  float: right;
+}
+
+#barra-subtotal {
+
+border-color: grey;
+}
+
+@media only screen and (min-height: 750px) {
+  .fundo-span-conteudo {
+    width: 50%;
+  }
+}
+
+
+
+
+/* Span Pedido Parte 2*/
+
+#total-pedido {
+    background-color:#f7f7f7;
+    border-bottom-right-radius: 10px; 
+    border-bottom-left-radius:10px;
+}
+
+.close2:hover,
+.close2:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.close2 {
+   float: right;
+   margin-right: 5%;
+   margin-top: -2%;
+   color: white;
+   font-size: 35px;
+   font-weight: bold;
+    
+}
+
+
+#botao-span2 {
+
+ background-color: #EFECEC;
+height: 60px;
+width: 100%;
+font-size: 20px;
+bottom: 0;
+}
+
+/* Span Detalhes do Prato */
+
+#menos {
+  border: none;
+  width: 25px;
+  background-color: white;
+}
+
+#mais {
+
+  border: none;
+  width: 25px;
+  background-color: white;
+}
+
+.btn {
+  border: solid;
+  border-width: 0.5px;
+  border-color: #D3D3D3;
+}
+.numero {
+border: none;
+font-size: 17px;
+}
+
+#quantidade {
+  width: 100%;
+}
+
+#nome-requisicao {
+ display: block;
+}
+
+#nome-prato {
+  height: 5%;
+  top: 0%;
+  border-bottom: solid;
+  border-width: 2px;
+  border-top-left-radius: 10px ;
+  border-top-right-radius: 10px;
+  border-bottom-color: grey;
+}
+
+.fundo-span-2 {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 40px;
+    
+}
+
+.fundo-span-conteudo-2 {
+  background-color: white;
+  margin: 5% auto 15% auto; 
+  width: 90%; 
+  border-radius : 10px;
+}
+
+
+#input-req-real {
+  width: 72%;
+}
+
+#nome-requisicao {
+  width: 90%;
+}
+
+#botao-adicionar {
+  float: right;
+}
+
+#input-requisiçoes {
+  width: 100%;
+  display: none;
+}
+
+.botao-fechar-span { 
+  float: right;
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+span.psw {
+  float: right;
+}
+
+
+@media only screen and (min-height: 750px) {
+  .fundo-span-conteudo-2 {
+    width: 50%;
+  }
+}
+
+
+/* Estilização dos Inputs e Extras*/
+
+input[type=text]{outline:none}
+input[type=button]{outline:none}
+textarea {outline: none;resize: none;}
+
+
+.dark-red {
+  background-color: #8B0000 ;
+}
+
+#addButton {
+
+   background-color: #8B0000 ;
+}
+.pratos-descricao {
+
+  text-align: left;
+}
+
+li {
+list-style-type: none;
+}
+
+
+#pedido-vazio {
+
+  display: block;
+  color: rgba(234,234,234,0.30000000000000004);
+  font-family: Trebuchet MS, sans-serif;
+  position: relative;
+}
+
+#corpo-span-subtotal1 {
+
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 21px;
+}
+
+
+#id01 {
+
+  position: absolute;
+}

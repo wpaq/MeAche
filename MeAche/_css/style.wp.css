@@ -1,0 +1,532 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(30, 30, 30);
+}
+
+/*Imagem da Logo*/
+
+#logo {
+  margin-top: 15px;
+}
+
+#img-logo {
+  width: 15vh;
+}
+
+.fundo-quantidades {
+  background-color: rgb(30, 30, 30);
+  height: 60px;
+}
+
+#categorias {
+  margin-bottom: 20vh;
+}
+
+@media only screen and (min-height: 750px) {
+  #img-logo {
+    width: 13%;
+  }
+}
+
+@media only screen and (min-height: 970px) {
+  #img-logo {
+    width: 11%;
+  }
+}
+
+@media only screen and (min-height: 1140px) {
+  #img-logo {
+    width: 7%;
+  }
+}
+
+/* HR */
+
+#barra {
+  margin-left: 37%;
+  width: 25%;
+  border-width: 4px;
+  border-color: #F05F40;
+}
+
+/* Seta do Cardáio */
+.arrowDown {
+  display: block;
+}
+.arrowUp {
+  display: none; 
+}
+#tbCreate {
+  display: none;
+}
+
+/* Cardápio */
+
+.menuTitulo {
+  font-size: 175%;
+  font-style: bold;
+  display: inline-block;
+}
+
+.font-categoria {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 25px;
+}
+
+.pratos {
+  display: inline-block;
+  width: 100%;
+}
+
+.menu {
+  margin-left: -15px;
+  margin-right: 25px;
+}
+
+@media only screen and (min-height: 750px) {
+  #categorias {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+
+/* Subtotal */
+
+.alignCenter {
+  margin-top: 20px ;
+}
+
+#subtotal {
+  background-color: #2a2829;
+  height: 70px;
+  width: 40%;
+}
+#subtotal-meuPedido {
+  margin-top: 15px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width:100%;
+}
+
+.footer h3 span {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+#pedido-vazio {
+
+  display: block;
+  color: rgba(234,234,234,0.30000000000000004);
+  font-family: Trebuchet MS, sans-serif;
+  position: relative;
+}
+
+/* Subtotal1 */
+
+#seta{
+  transform: rotate(0deg);
+}
+
+#subtotal1 {
+  background-color: #2a2829;
+  height: 70px;
+  width: 60%;
+  margin-left: 40%;
+  border-left: solid;
+  border-width: 1px;
+  border-color: white;
+}
+
+#subtotal-meuPedido {
+  margin-top: 15px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width:100%;
+}
+
+.footer h3 span {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+/*Span do Subtotal*/
+
+#id01 {
+
+  display: none;
+}
+
+span.psw {
+  float: right;
+}
+
+#corpo-span-subtotal1 {
+
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 21px;
+}
+.fundo-span {
+  background-color: #363434;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+#meu-pedido{
+  border-bottom: solid;
+  border-color: grey;
+  height: 70px;
+}
+
+.nome-prato {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.x-icon {
+margin-top: 10px;
+}
+.close1 {
+   float: right;
+   margin-left: 83%;
+   position: absolute;
+   margin-top: 0%;
+   color: white;
+   font-size: 29px;
+   font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+#total-parcial {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+#preco-subtotal{
+  float: right;
+}
+
+#barra-subtotal {
+
+border-color: grey;
+margin: 0;
+}
+#subtotal-meupedido {
+  margin-top: 15px;
+}
+#subtotal-hrP {
+  background-color: rgb(30, 30, 30);
+  height: 60px;
+}
+
+.infos-pedido{
+  font-size: 18px;
+}
+
+/* Span do Pedido Feito e "Nada Selecionado" */
+
+
+#id02, #id03 {
+
+  display: none;
+}
+
+#numero-pedido {
+  line-height: 50px;
+}
+
+.close2:hover,
+.close2:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.close2 {
+   float: right;
+   margin-right: 5%;
+   margin-top: -2%;
+   color: white;
+   font-size: 35px;
+   font-weight: bold;
+
+}
+
+#botao-span2 {
+background-color: #EFECEC;
+height: 60px;
+width: 100%;
+font-size: 20px;
+bottom: 0;
+}
+
+#pedir {
+  border-top: solid;
+  border-width: 1px;
+  line-height: 40px;
+  width: 100%;
+}
+
+.fundo-span-3 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+
+}
+
+.fundo-span-conteudo-3 {
+  background-color:  rgb(30, 30, 30);
+  margin: 50% auto 15% auto;
+  border: 1px solid #888;
+  width: 70%;
+  border-radius : 5px;
+  overflow: hidden;
+  color: rgb(234, 234, 234);
+}
+
+
+@media only screen and (min-height: 750px) {
+  .fundo-span-conteudo-3 {
+   margin-top: 20%;
+  }
+}
+
+@media only screen and (min-height: 1140px) {
+  .fundo-span-conteudo-3 {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .fundo-span-conteudo-3  {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .fundo-span-conteudo-3  {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .fundo-span-conteudo-3  {
+    width: 20%;
+  }
+}
+/* Span Detalhes do Prato */
+
+#prato1, #prato2, #prato3 ,#prato4, #prato5, #prato6, #prato7, #prato8, #prato9, #prato10, #prato11, #prato12, #prato13,
+#prato14, #prato15, #prato16, #prato17, #prato18, #prato19, #prato20, #prato21, #prato22, #prato23, #prato34, #prato25,
+#prato26, #prato27, #prato28, #prato29 {
+  display: none;
+}
+
+#borda {
+  border-color: grey;
+}
+.pedidos-especiais{
+  color: rgba(234, 234, 234, 0.8);
+  font-size: 20px;
+  position: relative;
+
+}
+#pedido-adicionais, #pedido-adicionais2, #pedido-adicionais3, #pedido-adicionais4, #pedido-adicionais5, #pedido-adicionais6,
+#pedido-adicionais7, #pedido-adicionais8, #pedido-adicionais9, #pedido-adicionais10, #pedido-adicionais11, #pedido-adicionais12,
+#pedido-adicionais13, #pedido-adicionais14, #pedido-adicionais15, #pedido-adicionais16, #pedido-adicionais17, #pedido-adicionais18,
+#pedido-adicionais19, #pedido-adicionais20, #pedido-adicionais21, #pedido-adicionais22, #pedido-adicionais23, #pedido-adicionais24,
+#pedido-adicionais25, #pedido-adicionais26, #pedido-adicionais27, #pedido-adicionais28, #pedido-adicionais29 {
+  display: none;
+  color: rgba(234, 234, 234, 0.8);
+  font-size: 15px;
+  background-color: #363434;
+  position: relative;
+}
+
+
+#descricao{
+  color: rgba(234, 234, 234, 0.8);
+  position: relative;
+}
+
+#menos {
+  width: 27px;
+  border: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+  background-color: rgb(30, 30, 30);
+}
+
+#mais {
+  width: 27px;
+  border: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+  background-color: rgb(30, 30, 30);
+}
+
+#modificarMAISeMENOS{
+  float: right;
+  margin-top: -5px;
+}
+
+.btn {
+  border: solid;
+  border-width: 0.5px;
+  border-color: #D3D3D3;
+}
+.numero {
+border: none;
+font-size: 17px;
+}
+
+#quantidade {
+  width: 100%;
+  position: absolute;
+  bottom: 7%;
+  bottom: 0%;
+  position: fixed;
+  color: rgba(234, 234, 234, 0.8);
+}
+
+#nome-requisicao {
+ display: block;
+}
+
+#nome-prato {
+  height: 70px;
+  top: 0%;
+  margin-bottom: 20vh;
+  border-bottom: solid;
+  border-width: 2px;
+  border-bottom-color: grey;
+}
+
+#nome-prato2{
+  height: 83px;
+  top: 0%;
+  border-bottom: solid;
+  border-width: 2px;
+  border-bottom-color: grey;
+}
+
+.fundo-span-2 {
+   background-color: #363434;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.fundo-span-conteudo-2 {
+  background-color: white;
+  margin: 5% auto 15% auto;
+  width: 90%;
+  overflow: hidden;
+}
+
+
+#input-req-real {
+  width: 72%;
+}
+
+#nome-requisicao {
+  width: 90%;
+}
+
+#botao-adicionar {
+  float: right;
+}
+
+#input-requisiçoes {
+  width: 100%;
+  display: none;
+}
+
+.botao-fechar-span {
+  float: right;
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+span.psw {
+  float: right;
+}
+
+#addButton {
+  background-color: #efecec ;
+  width: 100%;
+  font-size: 20px;
+  height: 60px;
+  color: rgba(234, 234, 234, 0.8);
+
+}
+
+/* Estilização dos Inputs e Extras*/
+
+textarea{outline: none;resize: none;}
+
+li {
+list-style-type: none;
+}
+
+input{
+  outline: 0;
+  background-color: rgb(30, 30, 30);
+  border:0 none;
+  color: rgba(234, 234, 234, 0.8);
+}
+
+

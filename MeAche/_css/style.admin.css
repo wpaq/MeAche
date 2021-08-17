@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.input_checkbox {
+    width: 50px;
+    height: 50px;
+}
+
+.td_pedidos {
+    display: block;
+    min-width: 140px;
+}
+
+#td_num_pedidos {
+    min-width: 140px;
+}
+
+
+.ulClass {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 140px;
+    max-height: 2.5ch;
+    margin-left: -17px;
+    margin-bottom: 5px;
+}
+
+.ulClass:hover {
+    white-space: normal;
+    max-height: none;
+}
+
+#barra {
+    margin-left: 27%;
+    width: 45%;
+    border-width: 4px;
+    border-color: #F05F40;
+}
+
+#trAdm {
+    white-space: nowrap;
+}
+
+/* icons arrow down and up style */
+    .fa-angle-down {
+        margin-top: 5px;
+    }
+    .fa-angle-up {
+        margin-top: 5px;
+    }
+/*! icons arrow down and up style !*/
+
+@media (min-width: 320px) {
+    #img-logo {
+        margin-top: 2em;
+        width: 25%;
+    }
+    .users-table {
+        margin-top: 2em;
+    }
+    .estiloButton {
+        width: 100%;
+        height: 10%;
+        background-color: grey;
+        font-size: 18px;
+        font-variant: small-caps;
+        margin-bottom: -25px;
+    }
+}
+
+@media (min-width: 990px) {
+    #img-logo {
+        width: 7%;
+    }
+    #barra {
+        margin-left: 37%;
+        width: 25%;
+        border-width: 4px;
+        border-color: #F05F40;
+    }
+}
