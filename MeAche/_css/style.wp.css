@@ -366,7 +366,7 @@ bottom: 0;
   display: none;
 }
 
-#borda {
+.borda {
   border-color: grey;
 }
 .pedidos-especiais{
@@ -413,7 +413,7 @@ bottom: 0;
   background-color: rgb(30, 30, 30);
 }
 
-#modificarMAISeMENOS{
+.btnAddMinus{
   float: right;
   margin-top: -5px;
 }
@@ -428,7 +428,7 @@ border: none;
 font-size: 17px;
 }
 
-#quantidade {
+.quantidade {
   width: 100%;
   position: absolute;
   bottom: 7%;

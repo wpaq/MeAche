@@ -6,15 +6,11 @@ for(let i = 0; i <= telaPratos.length; i++) {
     pratos[i].addEventListener('click', () => {
         if(telaPratos[i].style.display === 'none') {
             telaPratos[i].style.display = 'block';
-        } else {
+        };
+    });
+    closeTela[i].addEventListener('click', () => {
+        if(telaPratos[i].style.display === 'block') {
             telaPratos[i].style.display = 'none';
         }
-
-        closeTela[i].addEventListener('click', () => {
-            console.log(closeTela[i])
-            if(telaPratos[i].style.display === 'block') {
-                telaPratos[i].style.display = 'none';
-            }
-        });
     });
 };
