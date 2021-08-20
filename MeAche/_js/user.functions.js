@@ -62,13 +62,6 @@ function telaSubtotal() {
   }
 }
 
-  function fecharPratos(){
-  var pratos = document.querySelectorAll('.fundo-span-2')
-  for (var i = 0; i < pratos.length; i++) {
-      pratos[i].style.display = "none";
-    }
-}
-
 // Function Arrows //  
 const arrowUp = document.querySelectorAll('.arrowUp');
 const arrowDown = document.querySelectorAll('.arrowDown');

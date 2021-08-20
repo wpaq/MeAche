@@ -1,18 +1,4 @@
 // Value Petiscos
-
-doc = [];
-for (let i = 1; i < 5; i++) {
-  var elementId = 'quantPet'+i;
-  doc.push(document.getElementById(elementId));
-}
-
-for (let j of doc) {
-  var asinha = j;
-}
-
-
-
-
 var camarao = document.getElementById('quantPet2'),
   calabresa = document.getElementById('quantPet3'),
   carneDeSol = document.getElementById('quantPet4'),

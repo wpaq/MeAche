@@ -344,12 +344,11 @@
 
 
 
-  <!-- Span da Descrição do Prato 1-->
+  <!-- Tela da Descrição do Prato 1-->
   <div class="tela-pratos fundo-span-2" style="display: none;">
     <div class="w3-container close1">       
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-
     <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
       <h3 class="w3-center fadeInDown animate nome-prato">        
           <label id="asinha">
@@ -357,7 +356,6 @@
           </label>        
       </h3>
     </div>
-
     <div id="textos" class="fadeIn animate">
       <div id="descricao">
           <h5 class="w3-container">
@@ -373,415 +371,311 @@
       <div id="pedido-adicionais" class="w3-container" style="display: none;">
         <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS1" placeholder="Escreva suas observações"></textarea>
       </div>
-    </div>
-  
+    </div>  
     <div class="quantidade">
         <div class="fundo-quantidades">
           <hr class="borda">
           <label class="w3-container fadeInUp animate">  Quantidade </label>
           <div class="btnAddMinus w3-container fadeInUp animate">
             <input type="button" class="menos" id="menos" value='-'>
-            <input type="text" value="0" name="numero" class="numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
+            <input type="text" value="0" name="numero" class="quantPedido numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
             <input type="button" class="mais" id="mais" value='+'/>
           </div>
         </div>
           <button type="submit" id="addButton" class="w3-button w3-text-black w3-center"><i class="fa fa-plus"></i>ADICIONAR AO MEU PEDIDO</button>       
     </div>
-
   </div>
-  <!-- Span da Descrição do Prato 2 -->
+  <!-- Tela da Descrição do Prato 2 -->
   <div class="tela-pratos fundo-span-2" style="display: none;">
-    <div class="w3-container close1"> 
+    <div class="w3-container close1">       
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                
-    <div id="nome-prato2" class="w3-container w3-text-white w3-dark-grey">
-      <h3 class="w3-center fadeInDown animate nome-meu-pedido">
-        <b>
-          <label id="camarao">
-            <li>Camarão Alho<br> e Óleo</li>
-          </label>
-        </b>
+    <div id="nome-prato-2" class="w3-container w3-text-white w3-dark-grey">
+      <h3 class="w3-center fadeInDown animate nome-prato">        
+          <label id="asinha">
+            <li>Camarão Alho <br>e Óleo</li>
+          </label>        
       </h3>
     </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div id="textos" class=" fadeIn animate">
-                    <div id="descricao">
-                      <h5 class="w3-container">Descrição do Prato
-                        ..............................................
-                      </h5>
-                    </div>
-                    <hr>
-                    <div  class="w3-container pedidos-especiais" onclick="">
-                      <h3 class="fa fa-plus" onclick="pedidosEspeciais2()"> Observações</h3>
-                    </div>
-                    <br>
-
-                    <div id="pedido-adicionais2" class="w3-container" style="display: none;">
-                      <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS2" placeholder="Escreva suas observações"></textarea>
-                    </div>
-                    </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                    <div id="quantidade" class="">
-                      <div data-app="product.quantity" class="quantidade">
-                        <div class="fundo-quantidades">
-                          <hr class="borda">
-                          <label class="w3-container fadeInUp animate">  Quantidade </label>
-                          <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
-                            <input type="button" class="menos" id="menos" value='-'>
-                            <input name="quantPet2" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
-                            <input type="button" class="mais" id="mais" value='+'/>
-                          </div>
-                        </div>
-
-                        <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato2();mandardados2();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
-                      </div>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                    </div>
-
-  </div>
-  <!-- Span da Descrição do Prato 3 -->
-  <div class="tela-pratos fundo-span-2" style="display: none;">
-    <div class="w3-container close1"> 
-        <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
-    </div>
-
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="calabresa"><li>Calabresa  Com Fritas</li></label></b></h3>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div id="textos" class="fadeIn animate">
-                    <div id="descricao">
-                      <h5 class="w3-container">Descrição do Prato
-                        ..............................................
-                      </h5>
-                    </div>
-                    <hr>
-                    <div class="w3-container pedidos-especiais" onclick="">
-                      <h3 class="fa fa-plus" onclick="pedidosEspeciais3()"> Observações</h3>
-                    </div>
-                    <br>
-
-                    <div id="pedido-adicionais3" class="w3-container" style="display: none;">
-                      <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS3" placeholder="Escreva suas observações"></textarea>
-
-                    </div>
-                    </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+    <div id="textos" class="fadeIn animate">
+      <div id="descricao">
+          <h5 class="w3-container">
+          Descrição do Prato
+          ..............................................
+          </h5>
+      </div>
+      <hr>
+      <div class="w3-container pedidos-especiais" onclick="">
+        <h3 class="fa fa-plus" onclick="pedidosEspeciais()"> Observações</h3>
+      </div>
+      <br>
+      <div id="pedido-adicionais" class="w3-container" style="display: none;">
+        <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS1" placeholder="Escreva suas observações"></textarea>
+      </div>
+    </div>  
     <div class="quantidade">
         <div class="fundo-quantidades">
           <hr class="borda">
           <label class="w3-container fadeInUp animate">  Quantidade </label>
           <div class="btnAddMinus w3-container fadeInUp animate">
             <input type="button" class="menos" id="menos" value='-'>
-            <input type="text" value="0" name="numero" class="numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
+            <input type="text" value="0" name="numero" class="quantPedido numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
             <input type="button" class="mais" id="mais" value='+'/>
           </div>
         </div>
           <button type="submit" id="addButton" class="w3-button w3-text-black w3-center"><i class="fa fa-plus"></i>ADICIONAR AO MEU PEDIDO</button>       
     </div>
   </div>
-  <!-- Span da Descrição do Prato 4 -->
+  <!-- Tela da Descrição do Prato 3 -->
   <div class="tela-pratos fundo-span-2" style="display: none;">
-    <div class="w3-container close1"> 
+    <div class="w3-container close1">       
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato2" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="carneSol"><li>Carne de Sol <br>C/ Macaxeira</li></label></b></h3>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div id="textos" class="fadeIn animate">
-                    <div id="descricao">
-                      <h5 class="w3-container">Descrição do Prato
-                        ..............................................
-                      </h5>
-                    </div>
-                    <hr>
-                    <div class="w3-container pedidos-especiais" onclick="">
-                      <h3 class="fa fa-plus" onclick="pedidosEspeciais4()"> Observações</h3>
-                    </div>
-                    <br>
-
-                    <div id="pedido-adicionais4" class="w3-container" style="display: none;">
-                      <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS4" placeholder="Escreva suas observações"></textarea>
-
-                    </div>
-                    </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                    <div id="quantidade" class="">
-                        <div data-app="product.quantity" id="quantidade">
-                          <div class="fundo-quantidades">
-                            <hr class="borda">
-                            <label class="w3-container fadeInUp animate">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
-                            <input type="button" id="menos" value='-' onclick="process4(-1)">
-                            <input id="quantPet4" name="quantPet4" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
-                            <input type="button" id="mais" class="" value='+' onclick="process4(1)" />
-                            </div>
-                          </div>
-                            <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato4();mandardados4();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
-                        </div>
-                        <br>
-                        <br>
-                            <br>
-                        <br>
-
-                        <br> </div>
+    <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+      <h3 class="w3-center fadeInDown animate nome-prato">        
+          <label id="asinha">
+            <li>Calabresa com Fritas</li>
+          </label>        
+      </h3>
+    </div>
+    <div id="textos" class="fadeIn animate">
+      <div id="descricao">
+          <h5 class="w3-container">
+          Descrição do Prato
+          ..............................................
+          </h5>
+      </div>
+      <hr>
+      <div class="w3-container pedidos-especiais" onclick="">
+        <h3 class="fa fa-plus" onclick="pedidosEspeciais()"> Observações</h3>
+      </div>
+      <br>
+      <div id="pedido-adicionais" class="w3-container" style="display: none;">
+        <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS1" placeholder="Escreva suas observações"></textarea>
+      </div>
+    </div>  
+    <div class="quantidade">
+        <div class="fundo-quantidades">
+          <hr class="borda">
+          <label class="w3-container fadeInUp animate">  Quantidade </label>
+          <div class="btnAddMinus w3-container fadeInUp animate">
+            <input type="button" class="menos" id="menos" value='-'>
+            <input type="text" value="0" name="numero" class="quantPedido numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
+            <input type="button" class="mais" id="mais" value='+'/>
+          </div>
+        </div>
+          <button type="submit" id="addButton" class="w3-button w3-text-black w3-center"><i class="fa fa-plus"></i>ADICIONAR AO MEU PEDIDO</button>       
+    </div>
   </div>
-  <!-- Span da Descrição do Prato 5 -->
+  <!-- Tela da Descrição do Prato 4 -->
   <div class="tela-pratos fundo-span-2" style="display: none;">
-    <div class="w3-container close1"> 
+    <div class="w3-container close1">       
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="torresmo"><li>Torresmo</li></label></b></h3>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div id="textos" class="fadeIn animate" >
-                    <div id="descricao">
-                      <h5 class="w3-container">Descrição do Prato
-                        ..............................................
-                      </h5>
-                    </div>
-                    <hr>
-                    <div  class="w3-container pedidos-especiais" onclick="">
-                      <h3 class="fa fa-plus" onclick="pedidosEspeciais5()"> Observações</h3>
-                    </div>
-                    <br>
-
-                    <div id="pedido-adicionais5" class="w3-container" style="display: none;">
-                      <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS5" placeholder="Escreva suas observações"></textarea>
-
-                    </div>
-                    </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                    <div class="quantidade" class="">
-                        <div data-app="product.quantity" id="quantidade">
-                          <div class="fundo-quantidades">
-                            <hr class="borda">
-                            <label class="w3-container fadeInUp animate">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
-                            <input type="button" id="menos" class="menos" value='-'>
-                            <input id="quantPet5" name="quantPet5" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
-                            <input type="button" id="mais" class="mais" value='+'/>
-                            </div>
-                          </div>
-                            <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato5();mandardados5();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
-                        </div>
-                        <br>
-                        <br>
-                            <br>
-                        <br>
-
-                        <br> </div>
+    <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+      <h3 class="w3-center fadeInDown animate nome-prato">        
+          <label id="asinha">
+            <li>Carne de Sol <br>C/ Macaxeira</li>
+          </label>        
+      </h3>
+    </div>
+    <div id="textos" class="fadeIn animate">
+      <div id="descricao">
+          <h5 class="w3-container">
+          Descrição do Prato
+          ..............................................
+          </h5>
+      </div>
+      <hr>
+      <div class="w3-container pedidos-especiais" onclick="">
+        <h3 class="fa fa-plus" onclick="pedidosEspeciais()"> Observações</h3>
+      </div>
+      <br>
+      <div id="pedido-adicionais" class="w3-container" style="display: none;">
+        <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS1" placeholder="Escreva suas observações"></textarea>
+      </div>
+    </div>  
+    <div class="quantidade">
+        <div class="fundo-quantidades">
+          <hr class="borda">
+          <label class="w3-container fadeInUp animate">  Quantidade </label>
+          <div class="btnAddMinus w3-container fadeInUp animate">
+            <input type="button" class="menos" id="menos" value='-'>
+            <input type="text" value="0" name="numero" class="quantPedido numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
+            <input type="button" class="mais" id="mais" value='+'/>
+          </div>
+        </div>
+          <button type="submit" id="addButton" class="w3-button w3-text-black w3-center"><i class="fa fa-plus"></i>ADICIONAR AO MEU PEDIDO</button>       
+    </div>
   </div>
-  <!-- Span da Descrição do Prato 6 -->
+  <!-- Tela da Descrição do Prato 5 -->
   <div class="tela-pratos fundo-span-2" style="display: none;">
-    <div class="w3-container close1"> 
+    <div class="w3-container close1">       
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato2" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="batata"><li>Batata Frita <br>(C/ Sheddar)</li></label></b></h3>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div id="textos" class="fadeIn animate">
-                    <div id="descricao">
-                      <h5 class="w3-container">Descrição do Prato
-                        ..............................................
-                      </h5>
-                    </div>
-                    <hr>
-                    <div class="w3-container pedidos-especiais" onclick="">
-                      <h3 class="fa fa-plus" onclick="pedidosEspeciais6()"> Observações</h3>
-                    </div>
-                    <br>
-
-                    <div id="pedido-adicionais6" class="w3-container" style="display: none;">
-                      <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS6" placeholder="Escreva suas observações"></textarea>
-
-                    </div>
-                    </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                    <div id="quantidade" class="">
-                        <div data-app="product.quantity" id="quantidade">
-                          <div class="fundo-quantidades">
-                            <hr class="borda">
-                            <label class="w3-container fadeInUp animate">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
-                            <input type="button" id="menos" value='-' onclick="process6(-1)">
-                            <input id="quantPet6" name="quantPet6" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
-                            <input type="button" id="mais" class="" value='+' onclick="process6(1)" />
-                            </div>
-                          </div>
-                            <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato6();mandardados6();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
-                        </div>
-                        <br>
-                        <br>
-                            <br>
-                        <br>
-
-                        <br> </div>
+    <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+      <h3 class="w3-center fadeInDown animate nome-prato">        
+          <label id="asinha">
+            <li>Torresmo</li>
+          </label>        
+      </h3>
+    </div>
+    <div id="textos" class="fadeIn animate">
+      <div id="descricao">
+          <h5 class="w3-container">
+          Descrição do Prato
+          ..............................................
+          </h5>
+      </div>
+      <hr>
+      <div class="w3-container pedidos-especiais" onclick="">
+        <h3 class="fa fa-plus" onclick="pedidosEspeciais()"> Observações</h3>
+      </div>
+      <br>
+      <div id="pedido-adicionais" class="w3-container" style="display: none;">
+        <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS1" placeholder="Escreva suas observações"></textarea>
+      </div>
+    </div>  
+    <div class="quantidade">
+        <div class="fundo-quantidades">
+          <hr class="borda">
+          <label class="w3-container fadeInUp animate">  Quantidade </label>
+          <div class="btnAddMinus w3-container fadeInUp animate">
+            <input type="button" class="menos" id="menos" value='-'>
+            <input type="text" value="0" name="numero" class="quantPedido numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
+            <input type="button" class="mais" id="mais" value='+'/>
+          </div>
+        </div>
+          <button type="submit" id="addButton" class="w3-button w3-text-black w3-center"><i class="fa fa-plus"></i>ADICIONAR AO MEU PEDIDO</button>       
+    </div>
   </div>
-  <!-- Span da Descrição do Prato 7 -->
+  <!-- Tela da Descrição do Prato 6 -->
   <div class="tela-pratos fundo-span-2" style="display: none;">
-    <div class="w3-container close1"> 
+    <div class="w3-container close1">       
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="macaxeira"><li>Macaxeira</li></label></b></h3>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div id="textos" class="fadeIn animate" >
-                    <div id="descricao">
-                      <h5 class="w3-container">Descrição do Prato
-                        ..............................................
-                      </h5>
-                    </div>
-                <hr>
-                    <div  class="w3-container  pedidos-especiais" onclick="">
-                      <h3 class="fa fa-plus" onclick="pedidosEspeciais7()"> Observações</h3>
-                    </div>
-                <br>
-                    <div id="pedido-adicionais7" class="w3-container" style="display: none;">
-                      <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS7" placeholder="Escreva suas observações"></textarea>
-                    </div>
-                    </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                    <div id="quantidade" class="">
-                        <div data-app="product.quantity" id="quantidade">
-                          <div class="fundo-quantidades">
-                            <hr class="borda">
-                            <label class="w3-container fadeInUp animate">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
-                            <input type="button" id="menos" value='-' onclick="process7(-1)">
-                            <input id="quantPet7" name="quantPet7" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
-                            <input type="button" id="mais" class="" value='+' onclick="process7(1)" />
-                            </div>
-                          </div>
-                            <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato7();mandardados7();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
-                        </div>
-                        <br>
-                        <br>
-                            <br>
-                        <br>
-
-                        <br> </div>
+    <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+      <h3 class="w3-center fadeInDown animate nome-prato">        
+          <label id="asinha">
+            <li>Batata Frita <br>(C/ Sheddar)</li>
+          </label>        
+      </h3>
+    </div>
+    <div id="textos" class="fadeIn animate">
+      <div id="descricao">
+          <h5 class="w3-container">
+          Descrição do Prato
+          ..............................................
+          </h5>
+      </div>
+      <hr>
+      <div class="w3-container pedidos-especiais" onclick="">
+        <h3 class="fa fa-plus" onclick="pedidosEspeciais()"> Observações</h3>
+      </div>
+      <br>
+      <div id="pedido-adicionais" class="w3-container" style="display: none;">
+        <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS1" placeholder="Escreva suas observações"></textarea>
+      </div>
+    </div>  
+    <div class="quantidade">
+        <div class="fundo-quantidades">
+          <hr class="borda">
+          <label class="w3-container fadeInUp animate">  Quantidade </label>
+          <div class="btnAddMinus w3-container fadeInUp animate">
+            <input type="button" class="menos" id="menos" value='-'>
+            <input type="text" value="0" name="numero" class="quantPedido numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
+            <input type="button" class="mais" id="mais" value='+'/>
+          </div>
+        </div>
+          <button type="submit" id="addButton" class="w3-button w3-text-black w3-center"><i class="fa fa-plus"></i>ADICIONAR AO MEU PEDIDO</button>       
+    </div>
   </div>
-  <!-- Span da Descrição do Prato 8 -->
+  <!-- Tela da Descrição do Prato 7 -->
   <div class="tela-pratos fundo-span-2" style="display: none;">
-    <div class="w3-container close1"> 
+    <div class="w3-container close1">       
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="baiao"><li>Baião de Dois</li></label></b></h3>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div id="textos" class="fadeIn animate">
-                    <div id="descricao">
-                      <h5 class="w3-container">Descrição do Prato
-                        ..............................................
-                      </h5>
-                    </div>
-                    <hr>
-                    <div  class="w3-container pedidos-especiais" onclick="">
-                      <h3 class="fa fa-plus" onclick="pedidosEspeciais8()"> Observações</h3>
-                    </div>
-                    <br>
-
-                    <div id="pedido-adicionais8" class="w3-container" style="display: none;">
-                      <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS8" placeholder="Escreva suas observações"></textarea>
-
-                    </div>
-                    </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                    <div id="quantidade" class="">
-                        <div data-app="product.quantity" id="quantidade">
-                          <div class="fundo-quantidades">
-                            <hr class="borda">
-                            <label class="w3-container fadeInUp animate">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
-                            <input type="button" id="menos" value='-' onclick="process8(-1)">
-                            <input id="quantPet8" name="quantPet8" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
-                            <input type="button" id="mais" class="" value='+' onclick="process8(1)" />
-                            </div>
-                          </div>
-                            <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato8();mandardados8();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
-                        </div>
-                        <br>
-                        <br>
-                            <br>
-                        <br>
-
-                        <br> </div>
+    <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+      <h3 class="w3-center fadeInDown animate nome-prato">        
+          <label id="asinha">
+            <li>Macaxeira</li>
+          </label>        
+      </h3>
+    </div>
+    <div id="textos" class="fadeIn animate">
+      <div id="descricao">
+          <h5 class="w3-container">
+          Descrição do Prato
+          ..............................................
+          </h5>
+      </div>
+      <hr>
+      <div class="w3-container pedidos-especiais" onclick="">
+        <h3 class="fa fa-plus" onclick="pedidosEspeciais()"> Observações</h3>
+      </div>
+      <br>
+      <div id="pedido-adicionais" class="w3-container" style="display: none;">
+        <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS1" placeholder="Escreva suas observações"></textarea>
+      </div>
+    </div>  
+    <div class="quantidade">
+        <div class="fundo-quantidades">
+          <hr class="borda">
+          <label class="w3-container fadeInUp animate">  Quantidade </label>
+          <div class="btnAddMinus w3-container fadeInUp animate">
+            <input type="button" class="menos" id="menos" value='-'>
+            <input type="text" value="0" name="numero" class="quantPedido numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
+            <input type="button" class="mais" id="mais" value='+'/>
+          </div>
+        </div>
+          <button type="submit" id="addButton" class="w3-button w3-text-black w3-center"><i class="fa fa-plus"></i>ADICIONAR AO MEU PEDIDO</button>       
+    </div>
   </div>
+  <!-- Tela da Descrição do Prato 8 -->
+  <div class="tela-pratos fundo-span-2" style="display: none;">
+    <div class="w3-container close1">       
+        <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
+    </div>
+    <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+      <h3 class="w3-center fadeInDown animate nome-prato">        
+          <label id="asinha">
+            <li>Baião de Dois</li>
+          </label>        
+      </h3>
+    </div>
+    <div id="textos" class="fadeIn animate">
+      <div id="descricao">
+          <h5 class="w3-container">
+          Descrição do Prato
+          ..............................................
+          </h5>
+      </div>
+      <hr>
+      <div class="w3-container pedidos-especiais" onclick="">
+        <h3 class="fa fa-plus" onclick="pedidosEspeciais()"> Observações</h3>
+      </div>
+      <br>
+      <div id="pedido-adicionais" class="w3-container" style="display: none;">
+        <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS1" placeholder="Escreva suas observações"></textarea>
+      </div>
+    </div>  
+    <div class="quantidade">
+        <div class="fundo-quantidades">
+          <hr class="borda">
+          <label class="w3-container fadeInUp animate">  Quantidade </label>
+          <div class="btnAddMinus w3-container fadeInUp animate">
+            <input type="button" class="menos" id="menos" value='-'>
+            <input type="text" value="0" name="numero" class="quantPedido numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
+            <input type="button" class="mais" id="mais" value='+'/>
+          </div>
+        </div>
+          <button type="submit" id="addButton" class="w3-button w3-text-black w3-center"><i class="fa fa-plus"></i>ADICIONAR AO MEU PEDIDO</button>       
+    </div>
+  </div>
+
+
+
+
   <!-- Span da Descrição do Prato 9-->
   <div class="tela-pratos fundo-span-2" style="display: none;">
     <div class="w3-container close1"> 
@@ -1904,59 +1798,44 @@
   </div>
   <!-- Span da Descrição do Prato 29-->
   <div class="tela-pratos fundo-span-2" style="display: none;">
-    <div class="w3-container close1"> 
+    <div class="w3-container close1">       
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="heineken"><li>Heineken</li></label></b></h3>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div id="textos" class="fadeIn animate">
-                    <div id="descricao">
-                      <h5 class="w3-container">Descrição do Prato
-                        ..............................................
-                      </h5>
-                    </div>
-                    <hr>
-                    <div  class="w3-container  pedidos-especiais" onclick="">
-                      <h3 class="fa fa-plus" onclick="pedidosEspeciais29()"> Observações</h3>
-                    </div>
-                    <br>
-
-                    <div id="pedido-adicionais29" class="w3-container" style="display: none;">
-                      <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS29" placeholder="Escreva suas observações"></textarea>
-
-                    </div>
-                    </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                    <div id="quantidade" class="">
-                        <div data-app="product.quantity" id="quantidade">
-                          <div class="fundo-quantidades">
-                          <hr class="borda">
-                            <label class="w3-container fadeInUp animate">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
-                            <input type="button" id="menos" value='-' onclick="process29(-1)">
-                            <input id="quantPet29" name="quantPet29" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
-                            <input type="button" id="mais" class="" value='+' onclick="process29(1)" />
-                            </div>
-                          </div>
-                            <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato29();mandardados29();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
-                        </div>
-                        <br>
-                        <br>
-                            <br>
-                        <br>
-
-                        <br> </div>
+    <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+      <h3 class="w3-center fadeInDown animate nome-prato">        
+          <label id="asinha">
+            <li>Heineken</li>
+          </label>        
+      </h3>
+    </div>
+    <div id="textos" class="fadeIn animate">
+      <div id="descricao">
+          <h5 class="w3-container">
+          Descrição do Prato
+          ..............................................
+          </h5>
+      </div>
+      <hr>
+      <div class="w3-container pedidos-especiais" onclick="">
+        <h3 class="fa fa-plus" onclick="pedidosEspeciais()"> Observações</h3>
+      </div>
+      <br>
+      <div id="pedido-adicionais" class="w3-container" style="display: none;">
+        <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS1" placeholder="Escreva suas observações"></textarea>
+      </div>
+    </div>  
+    <div class="quantidade">
+        <div class="fundo-quantidades">
+          <hr class="borda">
+          <label class="w3-container fadeInUp animate">  Quantidade </label>
+          <div class="btnAddMinus w3-container fadeInUp animate">
+            <input type="button" class="menos" id="menos" value='-'>
+            <input type="text" value="0" name="numero" class="quantPedido numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
+            <input type="button" class="mais" id="mais" value='+'/>
+          </div>
+        </div>
+          <button type="submit" id="addButton" class="w3-button w3-text-black w3-center"><i class="fa fa-plus"></i>ADICIONAR AO MEU PEDIDO</button>       
+    </div>
   </div>
 </div>
 
