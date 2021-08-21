@@ -1,11 +1,14 @@
-function mostrarSubtotal(){
- var x = document.getElementById("id01");
-   if (x.style.display === "none") {
-       x.style.display = "block";
-   } else {
-       x.style.display = "none";
-   }
-}
+const subtotal = document.querySelector('#subtotal');
+const spanSubtotal = document.querySelector('#span-subtotal');
+
+subtotal.addEventListener('click', () => {
+  if (spanSubtotal.style.display === "none") {
+    spanSubtotal.style.display = "block";
+  } else {
+    spanSubtotal.style.display = "none";
+  }
+});
+
 function fecharSubtotal(){
  var x = document.getElementById("id01");
    if (x.style.display === "block") {
