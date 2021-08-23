@@ -1,37 +1,29 @@
-function mandardados1(){
-//value
-				var listaQuantidades = []
-				for(var i =1;i<=29;i++){
-								var elementId = 'quantPet'+i;
-								listaQuantidades.push(parseInt(document.getElementById(elementId).value))
-				}
-				var listaPrecos = [
-								13.00,25.00,15.00,20.00,10.00,
-								10.00,6.00,10.00,4.00,4.00,
-								4.00,4.00,4.00,3.00,3.00,
-								3.00,3.00,3.00,10.00,3.50,
-								3.50,3.50,1.50,3.00,3.00,
-								5.00,6.00,6.00,6.00
-				]
-				var listaTotalDoItem = []
-				var	trbody = document.getElementById('tablePedidos');
+function mandardados1() {
+	//value
+	listaQuantidades = []
+	quantPedido.forEach((e) => {
+		listaQuantidades.push(parseInt(e.value));
+	});
+		
+	const listaPrecos = [13.00,25.00,15.00,20.00,10.00,10.00,6.00,10.00,4.00,4.00,4.00,4.00,4.00,3.00,3.00,3.00,3.00,3.00,10.00,3.50,3.50,3.50,1.50,3.00,3.00,5.00,6.00,6.00,6.00]
+	var listaTotalDoItem = []
+	var	trbody = document.getElementById('tablePedidos');
 
-				if ($("#tr1").length){
+	if ($("#tr1").length){
+		var quantPetisco1 = document.getElementById('quantPetisco1');
+		quantPetisco1.innerText = listaQuantidades[0];
 
-								var quantPetisco1 = document.getElementById('quantPetisco1');
-								quantPetisco1.innerText = listaQuantidades[0];
+		var asinha = document.getElementById('asinha').firstChild.innerHTML;
+		document.getElementById('namePrato1').innerHTML = asinha;
 
-								var asinha = document.getElementById('asinha').firstChild.innerHTML;
-								document.getElementById('namePrato1').innerHTML = asinha;
+		var result =0.0;
+		for( var i = 0; i < 29 ; i++){
+			result += (listaQuantidades[i]*listaPrecos[i]);
+		}
 
-								var result =0.0;
-								for( var i = 0; i < 29 ; i++){
-												result += (listaQuantidades[i]*listaPrecos[i]);
-								}
-
-								for( var i = 0; i < 29 ; i++){
-												listaTotalDoItem.push(listaQuantidades[i]*listaPrecos[i]);
-								}
+		for( var i = 0; i < 29 ; i++){
+			listaTotalDoItem.push(listaQuantidades[i]*listaPrecos[i]);
+		}
 
 								document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 								document.getElementById('precoPetisco1').innerHTML = listaTotalDoItem[0].toFixed(2);

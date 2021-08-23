@@ -254,7 +254,7 @@
   <!--// Cardápio -->
 
   <!-- Subtotal -->
-  <div id="subtotal" class="footer " onclick="telaSubtotal();">
+  <div id="subtotal" class="footer">
     <h3 class="w3-center w3-text-white alignCenter">
       <i class="fa fa-shopping-cart w3-text-white"></i>
       <span> <b>R$:</b> <b id="totalValue">0.00</b></span>
@@ -264,24 +264,26 @@
   <!-- Fazer Pedido  -->
   <div id="subtotal1" class="footer" onclick="sendPedido();confirma()">
     <h3 class="w3-center w3-text-white alignCenter">
-      <span><b>FAZER PEDIDO</b></span>
+      <span>
+        <b>FAZER PEDIDO</b>
+      </span>
       <svg width="15px" height="13px" fill="rgb(255,255,255)" viewBox="0 0 15 30" style="transform: rotate(0deg);">
-  <path fill-rule="evenodd" d="M 14.32 17.03C 14.32 17.03 3.88 29.22 3.88 29.22 2.99 30.25 1.55 30.25 0.66 29.22-0.22 28.18-0.22 26.5 0.66 25.47 0.66 25.47 9.7 14.93 9.7 14.93 9.7 14.93 0.73 4.46 0.73 4.46-0.15 3.44-0.15 1.78 0.73 0.75 1.6-0.27 3.03-0.27 3.9 0.75 3.9 0.75 14.22 12.8 14.22 12.8 14.58 13.21 14.78 13.73 14.85 14.27 15.13 15.2 14.96 16.28 14.32 17.03Z"></path></svg>
+        <path fill-rule="evenodd" d="M 14.32 17.03C 14.32 17.03 3.88 29.22 3.88 29.22 2.99 30.25 1.55 30.25 0.66 29.22-0.22 28.18-0.22 26.5 0.66 25.47 0.66 25.47 9.7 14.93 9.7 14.93 9.7 14.93 0.73 4.46 0.73 4.46-0.15 3.44-0.15 1.78 0.73 0.75 1.6-0.27 3.03-0.27 3.9 0.75 3.9 0.75 14.22 12.8 14.22 12.8 14.58 13.21 14.78 13.73 14.85 14.27 15.13 15.2 14.96 16.28 14.32 17.03Z"></path>
+      </svg>
     </h3>
   </div>
 
   <!-- Span do Subtotal -->
   <div id="span-subtotal" style="display:none">
-    <div class="w3-container ">       
+    <div class="w3-container x-icon-subtotal close-subtotal">       
       <i class="fas fa-times fadeInDown animate x-icon"></i>
     </div>
-    <div class="infos-pedido">
-      <div class="w3-container w3-dark-grey">
+      <div class="info-pedidos w3-container w3-text-white w3-dark-grey">
         <h3 class="w3-center w3-text-white fadeInDown animate"> 
           <b>Meu pedido:</b> 
         </h3>
       </div>
-      <div id="div-tabela" class=" w3-text-white fadeIn animate" >
+      <div id="div-tabela" class=" w3-text-white fadeIn animate">
         <table id="tbCreate" class="table">
           <thead>
             <tr>
@@ -290,11 +292,11 @@
               <th scope="col" class="w3-center">Preço</th>
             </tr>
           </thead>
-          <tbody id="tablePedidos" >
+          <tbody id="tablePedidos">
           </tbody>
         </table>
       </div>
-      <div id="corpo-span-subtotal1" class="w3-text-white">
+      <div id="corpo-span-subtotal" class="w3-text-white">
         <div id="pedido-vazio" class="w3-center w3-container fadeIn animate">
           <li class="w3-jumbo">
             <i class="fa fa-shopping-cart"></i>
@@ -302,45 +304,45 @@
           <p>Seu Carrinho Está Vazio</p>
           <p>Navegue pelo nosso menu e comece a adicionar itens ao seu pedido</p>
         </div>
-        <div id="total-parcial" class="infos-pedido">
-          <div id="subtotal-hrP">
+        <div id="total-parcial">
+          <div id="subtotal-price">
             <hr id="barra-subtotal">
-            <p class="w3-text-white w3-container fadeInUp animate" id="subtotal-meuPedido">
-              <b>Subtotal: </b> 
-              <b>R$ </b>
-              <b id="preco-subtotal">0.00</b>
+            <p class="w3-text-white w3-container fadeInUp animate">
+              <b>Subtotal: </b>               
+              <b class="preco-subtotal">0.00</b>
+              <b class="preco-subtotal">R$</b>
             </p>
           </div>
-          <button id="botao-span2" class="w3-button w3-text-black" onclick="fecharSubtotal();">
+          <button id="cont-compra" class="close-subtotal w3-button w3-text-black">
             <b>CONTINUAR COMPRA</b>
           </button>
         </div>
       </div>
-    </div>
   </div>
 
   <!-- Span do Pedido Feito -->
-    <div id="pedido-enviado" class="fundo-span-3 fadeIn animate" style="display: none;">
+  <div id="pedido-feito" class="fundo-span-3 fadeIn animate" style="display: none;">
     <div class="fundo-span-conteudo-3 ">
-
       <h4 class="w3-center"> Pedido Enviado </h4>
-
-
-      <h4 class="w3-center" id="numero-pedido"><b>Nº do Pedido: <div id="novoNumero"></div> </b></h4>
+      <h4 class="w3-center" id="numero-pedido">
+        <b>Nº do Pedido: 
+          <div id="novoNumero">
+          </div> 
+        </b>
+      </h4>
       <h4 class="w3-container w3-center ">Apresente esse número ao efetuar o pagamento</h4>
-      <div id="pedir" onclick="fecharPedEnv();" class="w3-center">OK</div>
+      <div id="" class="w3-center">OK</div>
     </div>
   </div>
 
   <!-- Span do "Nada Selecionado" -->
-  <div id="id03" class="fundo-span-3 fadeIn animate" style="display: none;">
+  <div id="nada-selecionado" class="fundo-span-3 fadeIn animate" style="display: none;">
     <div class="fundo-span-conteudo-3 ">
-
-
-        <h4 class="w3-center"><b> Nada Selecionado</b></h4>
-          <h4 class="w3-center w3-container" id=nada-selecionado">Navegue pelo nosso menu e adicione itens ao carrinho</h4>
-
-      <div id="pedir" onclick="fecharid03()" class="w3-center">OK</div>
+        <h4 class="w3-center">
+          <b> Nada Selecionado</b>
+        </h4>
+        <h4 class="w3-center w3-container">Navegue pelo nosso menu e adicione itens ao carrinho</h4>
+      <div id="pedir" class="w3-center">OK</div>
     </div>
   </div>
 
@@ -375,7 +377,7 @@
             <input type="button" class="mais" value='+'/>
           </div>
         </div>
-          <button type="submit" class="addPedido w3-button w3-text-black w3-center">
+          <button type="submit" class="addPedido w3-button w3-text-black w3-center" onclick="mandardados1()">
             <i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO
           </button>       
     </div>
@@ -1776,7 +1778,7 @@
           <label class="w3-container fadeInUp animate">  Quantidade </label>
           <div class="btnAddMinus w3-container fadeInUp animate">
             <input type="button" class="menos" id="menos" value='-'>
-            <input type="text" value="0" name="numero" class="quantPedido numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
+            <input type="text" value="0" name="numero" class="numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
             <input type="button" class="mais" id="mais" value='+'/>
           </div>
         </div>

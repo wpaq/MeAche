@@ -1,39 +1,26 @@
 const subtotal = document.querySelector('#subtotal');
 const spanSubtotal = document.querySelector('#span-subtotal');
+const closeSubtotal = document.querySelectorAll('.close-subtotal');
+
+const pedidoFeito = document.querySelector('#pedido-feito');
+const nadaSelecionado = document.querySelector('#nada-selecionado');
+const pedido = document.querySelector('#pedir');
 
 subtotal.addEventListener('click', () => {
-  if (spanSubtotal.style.display === "none") {
+  if(spanSubtotal.style.display === "none") {
     spanSubtotal.style.display = "block";
-  } else {
-    spanSubtotal.style.display = "none";
   }
 });
 
-function fecharSubtotal(){
- var x = document.getElementById("id01");
-   if (x.style.display === "block") {
-       x.style.display = "none";
-   } else {
-       x.style.display = "block";
-     }
+for(let i = 0; i <= closeSubtotal.length; i++) {
+  closeSubtotal[i].addEventListener('click', () => {
+    if(spanSubtotal.style.display === "block") {
+      spanSubtotal.style.display = "none";
+    }
+  });
 }
-function fecharPedEnv(){
- var pedEnv = document.getElementById("pedido-enviado");
-   if (pedEnv.style.display === "block") {
-       pedEnv.style.display = "none";
-    location.reload();
-   } else {
-       pedEnv.style.display = "block";
-     }
-}
-function fecharid03(){
- var x = document.getElementById("id03");
-   if (x.style.display === "block") {
-       x.style.display = "none";
-   } else {
-       x.style.display = "block";
-     }
-}
+
+
 
 function confirma(){
 var ttValue = document.getElementById('totalValue').innerHTML;
