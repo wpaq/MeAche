@@ -283,21 +283,19 @@
           <b>Meu pedido:</b> 
         </h3>
       </div>
-      <div id="div-tabela" class=" w3-text-white fadeIn animate">
-        <table id="tbCreate" class="table">
-          <thead>
-            <tr>
-              <th scope="col" class="w3-center">Quant</th>
-              <th scope="col" class="w3-center">Pedido</th>
-              <th scope="col" class="w3-center">Preço</th>
-            </tr>
-          </thead>
-          <tbody id="tablePedidos">
-          </tbody>
-        </table>
-      </div>
+      <table id="tbCreate" class="table w3-text-white fadeIn animate hidden">
+        <thead id="meu-pedido-elements">
+          <tr>
+            <th scope="col" class="w3-center">Quant</th>
+            <th scope="col" class="w3-center">Pedido</th>
+            <th scope="col" class="w3-center">Preço</th>
+          </tr>
+        </thead>
+        <tbody id="tablePedidos">
+        </tbody>
+      </table>
       <div id="corpo-span-subtotal" class="w3-text-white">
-        <div id="pedido-vazio" class="w3-center w3-container fadeIn animate">
+        <div id="pedido-vazio" class="w3-center w3-container fadeIn animate show">
           <li class="w3-jumbo">
             <i class="fa fa-shopping-cart"></i>
           </li>
@@ -353,10 +351,10 @@
     <div class="w3-container x-icon-close">       
         <i class="fas fa-times fadeInDown animate x-icon"></i>
     </div>
-    <div class="nome-prato w3-container w3-text-white w3-dark-grey">
+    <div class="style-name-prato w3-container w3-text-white w3-dark-grey">
       <h3 class="w3-center fadeInDown animate">        
           <label>
-            <li class="prt">Asinha de Frango</li>
+            <li class="name-prato">Asinha de Frango</li>
           </label>        
       </h3>
     </div>
@@ -387,10 +385,10 @@
     <div class="w3-container x-icon-close">       
         <i class="fas fa-times fadeInDown animate x-icon"></i>
     </div>
-    <div class="nome-prato w3-container w3-text-white w3-dark-grey">
+    <div class="style-name-prato w3-container w3-text-white w3-dark-grey">
       <h3 class="w3-center fadeInDown animate">        
           <label id="camarao">
-            <li class="prt">Camarão Alho <br>e Óleo</li>
+            <li class="name-prato">Camarão Alho <br>e Óleo</li>
           </label>        
       </h3>
     </div>
@@ -421,10 +419,10 @@
     <div class="w3-container x-icon-close">       
         <i class="fas fa-times fadeInDown animate x-icon"></i>
     </div>
-    <div class="nome-prato w3-container w3-text-white w3-dark-grey">
+    <div class="style-name-prato w3-container w3-text-white w3-dark-grey">
       <h3 class="w3-center fadeInDown animate">        
           <label id="calabresa">
-            <li>Calabresa com Fritas</li>
+            <li class="name-prato">Calabresa com Fritas</li>
           </label>        
       </h3>
     </div>
@@ -455,7 +453,7 @@
     <div class="w3-container x-icon-close">       
         <i class="fas fa-times fadeInDown animate x-icon"></i>
     </div>
-    <div class="nome-prato w3-container w3-text-white w3-dark-grey">
+    <div class="style-name-prato w3-container w3-text-white w3-dark-grey">
       <h3 class="w3-center fadeInDown animate">        
           <label id="calabresa">
             <li>Carne de Sol <br>C/ Macaxeira</li>
@@ -489,7 +487,7 @@
     <div class="w3-container x-icon-close">       
         <i class="fas fa-times fadeInDown animate x-icon"></i>
     </div>
-    <div class="nome-prato w3-container w3-text-white w3-dark-grey">
+    <div class="style-name-prato w3-container w3-text-white w3-dark-grey">
       <h3 class="w3-center fadeInDown animate">        
           <label id="calabresa">
             <li>Torresmo</li>
@@ -523,7 +521,7 @@
     <div class="w3-container x-icon-close">       
         <i class="fas fa-times fadeInDown animate x-icon"></i>
     </div>
-    <div class="nome-prato w3-container w3-text-white w3-dark-grey">
+    <div class="style-name-prato w3-container w3-text-white w3-dark-grey">
       <h3 class="w3-center fadeInDown animate">        
           <label id="calabresa">
             <li>Batata Frita <br>(C/ Sheddar)</li>
@@ -557,7 +555,7 @@
     <div class="w3-container x-icon-close">       
         <i class="fas fa-times fadeInDown animate x-icon"></i>
     </div>
-    <div class="nome-prato w3-container w3-text-white w3-dark-grey">
+    <div class="style-name-prato w3-container w3-text-white w3-dark-grey">
       <h3 class="w3-center fadeInDown animate">        
           <label id="calabresa">
             <li>Macaxeira</li>
@@ -591,7 +589,7 @@
     <div class="w3-container x-icon-close">       
         <i class="fas fa-times fadeInDown animate x-icon"></i>
     </div>
-    <div class="nome-prato w3-container w3-text-white w3-dark-grey">
+    <div class="style-name-prato w3-container w3-text-white w3-dark-grey">
       <h3 class="w3-center fadeInDown animate">        
           <label id="calabresa">
             <li>Baião de Dois</li>
@@ -629,7 +627,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="boi"><li>Boi</li></label></b></h3>
                 </div>
                 <br>
@@ -685,7 +683,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="franbacon"><li>Franbacon</li></label></b></h3>
                 </div>
                 <br>
@@ -741,7 +739,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="frango"><li>Frango</li></label></b></h3>
                 </div>
                 <br>
@@ -797,7 +795,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="coracaoDeFrango"><li>Coração de Frango</li></label></b></h3>
                 </div>
                 <br>
@@ -853,7 +851,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="porco"><li>Porco</li></label></b></h3>
                 </div>
                 <br>
@@ -909,7 +907,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="caja"><li>Cajá</li></label></b></h3>
                 </div>
                 <br>
@@ -965,7 +963,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="laranja"><li>Laranja</li></label></b></h3>
                 </div>
                 <br>
@@ -1021,7 +1019,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="maracuja"><li>Maracujá</li></label></b></h3>
                 </div>
                 <br>
@@ -1077,7 +1075,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="acerola"><li>Acerola</li></label></b></h3>
                 </div>
                 <br>
@@ -1133,7 +1131,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="goiaba"><li>Goiaba</li></label></b></h3>
                 </div>
                 <br>
@@ -1189,7 +1187,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="jarra"><li>Jarra de Suco</li></label></b></h3>
                 </div>
                 <br>
@@ -1245,7 +1243,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="cocaCola"><li>Coca-Cola</li></label></b></h3>
                 </div>
                 <br>
@@ -1301,7 +1299,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="guarana"><li>Guaraná</li></label></b></h3>
                 </div>
                 <br>
@@ -1357,7 +1355,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="fanta"><li>Fanta</li></label></b></h3>
                 </div>
                 <br>
@@ -1413,7 +1411,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="aguaMineral"><li>Água Mineral</li></label></b></h3>
                 </div>
                 <br>
@@ -1469,7 +1467,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="skol"><li>Skol</li></label></b></h3>
                 </div>
                 <br>
@@ -1525,7 +1523,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="itaipava"><li>Itaipava</li></label></b></h3>
                 </div>
                 <br>
@@ -1581,7 +1579,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="original"><li>Original</li></label></b></h3>
                 </div>
                 <br>
@@ -1637,7 +1635,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="burdweiser"><li>Burdweiser</li></label></b></h3>
                 </div>
                 <br>
@@ -1693,7 +1691,7 @@
     <div class="w3-container close1"> 
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="eisenbahn"><li>Eisenbahn</li></label></b></h3>
                 </div>
                 <br>
@@ -1749,8 +1747,8 @@
     <div class="w3-container close1">       
         <i class="fas fa-times fadeInDown animate x-icon close-tela"></i>
     </div>
-    <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-      <h3 class="w3-center fadeInDown animate nome-prato">        
+    <div id="style-name-prato" class="w3-container w3-text-white w3-dark-grey">
+      <h3 class="w3-center fadeInDown animate style-name-prato">        
           <label id="asinha">
             <li>Heineken</li>
           </label>        
@@ -1797,12 +1795,10 @@
 <script type="text/javascript" src="_js/user.functions.js"></script>
 
 <!-- Functions JS -->
-<script type="text/javascript" src="_js/createTable.js"></script>
+<!-- <script type="text/javascript" src="_js/createTable.js"></script> -->
 <script type="text/javascript" src="_js/user.functions.js"></script>
-<script type="text/javascript" src="_js/quantity_fs.js"></script>
+<script type="module" src="_js/quantity_fs.js"></script>
 <script type="text/javascript" src="_js/mostrar.prato.functions.js"></script>
-<script type="text/javascript" src="_js/createTablePedir.js"></script>
-<script type="text/javascript" src="_js/pedidosEspeciais.js"></script>
 
 </html>
 

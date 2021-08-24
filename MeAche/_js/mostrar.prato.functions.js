@@ -2,7 +2,10 @@ const pratos = document.querySelectorAll('.pratos');
 const telaPratos = document.querySelectorAll('.tela-pratos');
 const closeTela = document.querySelectorAll('.x-icon-close');
 const addButon = document.querySelectorAll('.addPedido');
-const nomePrato = document.querySelectorAll('.prt');
+const nomePrato = document.querySelectorAll('.name-prato');
+const subtotalVazio = document.querySelector('#pedido-vazio');
+const tabela = document.querySelector('#tbCreate');
+const quantPedido = document.querySelectorAll('.quantPedido');
 
 for(let i = 0; i <= telaPratos.length; i++) {
     pratos[i].addEventListener('click', () => {
@@ -15,16 +18,17 @@ for(let i = 0; i <= telaPratos.length; i++) {
             telaPratos[i].style.display = 'none';
         }
     });
-    addButon[i].addEventListener('click', () => {        
+    addButon[i].addEventListener('click', () => {       
         if(telaPratos[i].style.display === 'block') {
             telaPratos[i].style.display = 'none';
         };
+        mandarDados();
     });
 };
 
 function mandarDados() {
     const trbody = document.getElementById('tablePedidos');
-    const trTable = document.querySelector('.trTable');
+    const trTable = document.querySelectorAll('.trTable');
     const tdQuant = document.querySelectorAll('.td-quant');
     const tdName = document.querySelectorAll('.td-name');
     const tdPreco = document.querySelectorAll('.td-preco');
@@ -49,13 +53,17 @@ function mandarDados() {
     }
 
     for(let i = 0; i < nomePrato.length; i++) {
-        if(trTable && listaTotalDoItem[i] != 0) {
+        if(trTable[i] && listaTotalDoItem[i] != 0) {
+            //Se a tabela ja existir E existir algum pedido atualiza os dados
             tdQuant[i].innerText = listaQuantidades[i];
             tdName[i].innerText = nomePrato[i].innerText;
-            tdPreco[i].innerText = listaTotalDoItem[i];
+            tdPreco[i].innerText = listaTotalDoItem[i].toFixed(2);
 
-            console.log(listaTotalDoItem[i])
         } else if(listaQuantidades[i] > 0) {
+            //Se existir algum pedido cria a tabela
+            subtotalVazio.classList.replace('show', 'hidden')            
+            tabela.classList.replace('hidden', 'show')
+
             const tr = document.createElement('tr')
             tr.setAttribute('class', 'trTable')
 
@@ -68,12 +76,19 @@ function mandarDados() {
 
             td_quant.innerText = listaQuantidades[i];
             td_name.innerText = nomePrato[i].innerText;
-            td_preco.innerText = listaTotalDoItem[i]
+            td_preco.innerText = listaTotalDoItem[i].toFixed(2);
 
             trbody.appendChild(tr)
             tr.appendChild(td_quant)
             tr.appendChild(td_name)
             tr.appendChild(td_preco)
-        }           
-    }        
+        } else if (trTable[i] && listaQuantidades[i] === 0) {
+            //Se não houver pedidos deleta o mesmo vazio
+            trbody.removeChild(trTable[i]);
+            if(trbody.firstElementChild === null) {
+                subtotalVazio.classList.replace('hidden', 'show')            
+                tabela.classList.replace('show', 'hidden')
+            }          
+        }
+    }    
 }

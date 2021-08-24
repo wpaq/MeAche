@@ -1,16 +1,25 @@
-const btnMenos = document.querySelectorAll('.menos');
-const btnMais = document.querySelectorAll('.mais');
-const quantPedido = document.querySelectorAll('.quantPedido');
+import elements from "./elements.js";
 
-for(let i = 0; i <= quantPedido.length; i++) {
-  btnMenos[i].addEventListener('click', () => {
-    if(quantPedido[i].value < 1) {
-      quantPedido[i].value = 0;
-    } else {
-      quantPedido[i].value = parseInt(quantPedido[i].value) - 1;
-    }
-  });
-  btnMais[i].addEventListener('click', () => {
-    quantPedido[i].value = parseInt(quantPedido[i].value) + 1;
-  });
-};
+const ar = {
+  start() {
+    elements.get.call(this);
+
+    this.quantidadePedido();
+  },
+  quantidadePedido() {
+    for(let i = 0; i <= this.quantPedido.length; i++) {
+      this.btnMenos[i].addEventListener('click', () => {
+        if(this.quantPedido[i].value < 1) {
+          this.quantPedido[i].value = 0;
+        } else {
+          this.quantPedido[i].value = parseInt(this.quantPedido[i].value) - 1;
+        }
+      });
+      this.btnMais[i].addEventListener('click', () => {
+        this.quantPedido[i].value = parseInt(this.quantPedido[i].value) + 1;
+      });
+    };
+  }
+}
+
+ar.start()
