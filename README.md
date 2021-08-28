@@ -1,3 +1,3 @@
 # MeAche
 
-DEMO: <link href="https://me-ache-6c62e.web.app/user.html">
+<a href="https://me-ache-6c62e.web.app/user.html">DEMO</a>
