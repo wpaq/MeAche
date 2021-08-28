@@ -8,22 +8,30 @@ const tabela = document.querySelector('#tbCreate');
 const quantPedido = document.querySelectorAll('.quantPedido');
 
 for(let i = 0; i <= telaPratos.length; i++) {
-    pratos[i].addEventListener('click', () => {
-        if(telaPratos[i].style.display === 'none') {
-            telaPratos[i].style.display = 'block';
-        };
-    });
-    closeTela[i].addEventListener('click', () => {
-        if(telaPratos[i].style.display === 'block') {
-            telaPratos[i].style.display = 'none';
-        }
-    });
-    addButon[i].addEventListener('click', () => {       
-        if(telaPratos[i].style.display === 'block') {
-            telaPratos[i].style.display = 'none';
-        };
-        mandarDados();
-    });
+    if(pratos[i]) {
+        pratos[i].addEventListener('click', () => {
+            if(telaPratos[i].style.display === 'none') {
+                telaPratos[i].style.display = 'block';
+            };
+        });
+    }
+    
+    if(closeTela[i]) {
+        closeTela[i].addEventListener('click', () => {
+            if(telaPratos[i].style.display === 'block') {
+                telaPratos[i].style.display = 'none';
+            }
+        });
+    }
+    if(addButon[i]) {
+        addButon[i].addEventListener('click', () => {       
+            if(telaPratos[i].style.display === 'block') {
+                telaPratos[i].style.display = 'none';
+            };
+            mandarDados();
+        });
+    }
+    
 };
 
 function mandarDados() {

@@ -1,0 +1,22 @@
+{
+  "name": "meache-refatorando",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpaq/MeAche.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wpaq/MeAche/issues"
+  },
+  "homepage": "https://github.com/wpaq/MeAche#readme",
+  "dependencies": {
+    "firebase": "^9.0.0-beta.7"
+  }
+}

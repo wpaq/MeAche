@@ -1,5 +1,6 @@
 {
   "projects": {
-    "MeAche": "me-ache-6c62e"
+    "MeAche": "me-ache-6c62e",
+    "default": "me-ache-6c62e"
   }
 }

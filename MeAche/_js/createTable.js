@@ -1,9 +1,10 @@
-firebase.database().ref('pedidos').on('value', function (snapshot) {
+getReference().ref('pedidos').on('value', function (snapshot) {
 
   var trbody = $('#pedidos_pendentes');
       trbody.html('');
 
   snapshot.forEach(function (item) {
+    console.log(item)
 
     var tr = document.createElement('tr');
     var th = document.createElement('th');

@@ -13,11 +13,14 @@ subtotal.addEventListener('click', () => {
 });
 
 for(let i = 0; i <= closeSubtotal.length; i++) {
-  closeSubtotal[i].addEventListener('click', () => {
-    if(spanSubtotal.style.display === "block") {
-      spanSubtotal.style.display = "none";
-    }
-  });
+  if(closeSubtotal[i]) {
+    closeSubtotal[i].addEventListener('click', () => {
+      if(spanSubtotal.style.display === "block") {
+        spanSubtotal.style.display = "none";
+      }
+    }); 
+  }
+  
 }
 
 
@@ -58,14 +61,17 @@ const arrowDown = document.querySelectorAll('.arrowDown');
 const collapseMenu = document.querySelectorAll(".collapseMenu");
 
 for(let i = 0; i <= collapseMenu.length; i++){
-  collapseMenu[i].addEventListener('click', () => {
-    if(collapseMenu[i].getAttribute('aria-expanded') === 'true'){
-      arrowDown[i].style.display = "block";
-      arrowUp[i].style.display = "none";    
-    } else {
-      arrowDown[i].style.display = "none";
-      arrowUp[i].style.display = "block";
-    }
-  });
+  if(collapseMenu[i]) {
+    collapseMenu[i].addEventListener('click', () => {
+      if(collapseMenu[i].getAttribute('aria-expanded') === 'true'){
+        arrowDown[i].style.display = "block";
+        arrowUp[i].style.display = "none";    
+      } else {
+        arrowDown[i].style.display = "none";
+        arrowUp[i].style.display = "block";
+      }
+    });  
+  }
+  
 }
 //! Function Arrows !//

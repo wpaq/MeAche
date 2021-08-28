@@ -9,7 +9,7 @@
   <meta name="author" content="">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="_css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
   <!-- Custom style CSS -->
   <link rel="stylesheet" type="text/css" href="_css/style.wp.css">
@@ -17,14 +17,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="_css/icon.css">
   <link rel="stylesheet" type="text/css" href="_css/animate.css">
-
-  <!-- Load the Firebase library before loading the body. -->
-  <script src="_js/firebase.js"></script>
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="_jquery/jquery-2.2.0.min.js"></script>
-  <script src="_jquery/popper.min.js"></script>
-  <script src="_js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -262,14 +254,11 @@
   </div>
 
   <!-- Fazer Pedido  -->
-  <div id="subtotal1" class="footer" onclick="sendPedido();confirma()">
+  <div id="sendPedido" class="footer">
     <h3 class="w3-center w3-text-white alignCenter">
       <span>
         <b>FAZER PEDIDO</b>
       </span>
-      <svg width="15px" height="13px" fill="rgb(255,255,255)" viewBox="0 0 15 30" style="transform: rotate(0deg);">
-        <path fill-rule="evenodd" d="M 14.32 17.03C 14.32 17.03 3.88 29.22 3.88 29.22 2.99 30.25 1.55 30.25 0.66 29.22-0.22 28.18-0.22 26.5 0.66 25.47 0.66 25.47 9.7 14.93 9.7 14.93 9.7 14.93 0.73 4.46 0.73 4.46-0.15 3.44-0.15 1.78 0.73 0.75 1.6-0.27 3.03-0.27 3.9 0.75 3.9 0.75 14.22 12.8 14.22 12.8 14.58 13.21 14.78 13.73 14.85 14.27 15.13 15.2 14.96 16.28 14.32 17.03Z"></path>
-      </svg>
     </h3>
   </div>
 
@@ -371,7 +360,7 @@
           <label class="w3-container fadeInUp animate">  Quantidade </label>
           <div class="btnAddMinus w3-container fadeInUp animate">
             <input type="button" class="menos" value='-'>
-            <input type="text" value="0" name="numero" class="quantPedido numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
+            <input type="text" value="2" name="numero" class="quantPedido numero w3-center w3-text-white" size="1" maxlength="2" disabled="disabled">
             <input type="button" class="mais" value='+'/>
           </div>
         </div>
@@ -1787,9 +1776,14 @@
 
 </body>
 
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="_jquery/jquery-2.2.0.min.js"></script>
+<script src="_jquery/popper.min.js"></script>
+<script src="_js/bootstrap.min.js"></script>
+
 <!-- Connection Firebase JS -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase.js"></script>
 <script type="text/javascript" src="_js/connection.firebase.js"></script>
-<script type="text/javascript" src="_js/application.js"></script>
 
 <!-- Functions JS -->
 <script type="text/javascript" src="_js/user.functions.js"></script>
@@ -1799,6 +1793,7 @@
 <script type="text/javascript" src="_js/user.functions.js"></script>
 <script type="module" src="_js/quantity_fs.js"></script>
 <script type="text/javascript" src="_js/mostrar.prato.functions.js"></script>
+<script type="module" src="_js/utils.js"></script>
 
 </html>
 
