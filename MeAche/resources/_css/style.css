@@ -32,7 +32,7 @@ body {
   margin-top: 10px;
 }
   
-.x-icon-close {
+.desc-close {
   float: right;
   margin-left: 83%;
   position: absolute;
@@ -42,8 +42,8 @@ body {
   font-weight: bold;
 }
   
-.x-icon-close:hover,
-.x-icon-close:focus {
+.desc-close:hover,
+.desc-close:focus {
   color: red;
   cursor: pointer;
 }
@@ -201,7 +201,7 @@ span.psw {
   font-size: 21px;
 }
 
-.tela-pratos {
+.desc-pratos {
   background-color: #363434;
   position: fixed;
   left: 0;
@@ -210,7 +210,7 @@ span.psw {
   height: 100%;
 }
 
-.tela-pratos .addPedido {
+.desc-pratos .addPedido {
   background-color: #D3D3D3;
 }
 
@@ -352,7 +352,6 @@ bottom: 0;
 }
 
 .fundo-span-3 {
-  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -363,6 +362,17 @@ bottom: 0;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
 
+}
+
+#pedido-feito p {
+  background-color: #da2c2c;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  padding: 5px;
 }
 
 .fundo-span-conteudo-3 {
@@ -459,6 +469,29 @@ bottom: 0;
   margin-top: -5px;
 }
 
+.btnSend {
+  float: right;
+}
+
+.minus {
+  width: 27px;
+  border: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+  background-color: rgb(30, 30, 30);
+}
+
+.plus {
+  width: 27px;
+  border: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+}
+
 .btn {
   border: solid;
   border-width: 0.5px;
@@ -468,6 +501,12 @@ bottom: 0;
 .numero {
   border: none;
   font-size: 17px;
+}
+
+.quantSend {
+  border: none;
+  font-size: 17px;
+  background-color: #363434;
 }
 
 #nome-requisicao {

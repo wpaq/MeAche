@@ -1,40 +1,18 @@
 const pratos = document.querySelectorAll('.pratos');
-const telaPratos = document.querySelectorAll('.tela-pratos');
-const closeTela = document.querySelectorAll('.x-icon-close');
+const telaPratos = document.querySelectorAll('.desc-pratos');
+const closeTela = document.querySelectorAll('.desc-close');
 const addButon = document.querySelectorAll('.addPedido');
 const nomePrato = document.querySelectorAll('.name-prato');
-const subtotalVazio = document.querySelector('#pedido-vazio');
-const tabela = document.querySelector('#tbCreate');
-const quantPedido = document.querySelectorAll('.quantPedido');
 
-for(let i = 0; i <= telaPratos.length; i++) {
-    if(pratos[i]) {
-        pratos[i].addEventListener('click', () => {
-            if(telaPratos[i].style.display === 'none') {
-                telaPratos[i].style.display = 'block';
-            };
-        });
-    }
-    
-    if(closeTela[i]) {
-        closeTela[i].addEventListener('click', () => {
-            if(telaPratos[i].style.display === 'block') {
-                telaPratos[i].style.display = 'none';
-            }
-        });
-    }
-    if(addButon[i]) {
-        addButon[i].addEventListener('click', () => {       
-            if(telaPratos[i].style.display === 'block') {
-                telaPratos[i].style.display = 'none';
-            };
-            mandarDados();
-        });
-    }
-    
-};
+const subtotalVazio = document.querySelector('#pedido-vazio');
+const tabela = document.querySelector('#main-table');
+const quantPedido = document.querySelectorAll('.quantPedido');
+const totalValue = document.querySelector('#totalValue')
+const carrinhoValue = document.querySelector('#carrinhoValue')
+
 
 function mandarDados() {
+    console.log('aaaaaaaaa')
     const trbody = document.getElementById('tablePedidos');
     const trTable = document.querySelectorAll('.trTable');
     const tdQuant = document.querySelectorAll('.td-quant');
@@ -58,6 +36,8 @@ function mandarDados() {
         total += (listaQuantidades[i] * listaPrecos[i])
         //Preço de cada Item
         listaTotalDoItem.push(listaQuantidades[i] * listaPrecos[i])
+        totalValue.innerText = total.toFixed(2)
+        carrinhoValue.innerText = total.toFixed(2)
     }
 
     for(let i = 0; i < nomePrato.length; i++) {

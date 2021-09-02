@@ -10,7 +10,6 @@ const firebaseConfig  = {
 // Initialize your Firebase app
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-
 function getReference() {
   // [START rtdb_get_reference]
   return database = firebase.database();

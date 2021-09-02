@@ -1,3 +1,3 @@
-import player from "./quantity_fs.js"
+import main from "./main.js"
 
-window.addEventListener('load', player.start())
+window.addEventListener('load', main.start())
