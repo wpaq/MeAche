@@ -59,6 +59,11 @@ export default {
     return pedido
   },  
   mandarDados() {
+    const trbody = document.getElementById('tablePedidos');
+    const trTable = document.querySelectorAll('.trTable');
+    const tdQuant = document.querySelectorAll('.td-quant');
+    const tdName = document.querySelectorAll('.td-name');
+    const tdPreco = document.querySelectorAll('.td-preco');
     //Arrays
     let listaQuantidades = []
       let listaTotalDoItem = []
@@ -81,10 +86,10 @@ export default {
     }
 
     for(let i = 0; i < this.nomePrato.length; i++) {
-        if(this.trTable[i] && listaTotalDoItem[i] != 0) {
+        if(trTable[i] && listaTotalDoItem[i] != 0) {
             //Se a tabela já existir somente atualiza os dados
-            this.tdQuant[i].innerText = listaQuantidades[i];           
-            this.tdPreco[i].innerText = listaTotalDoItem[i].toFixed(2);
+            tdQuant[i].innerText = listaQuantidades[i];           
+            tdPreco[i].innerText = listaTotalDoItem[i].toFixed(2);
 
         } else if(listaQuantidades[i] > 0) {
             //Se existir algum pedido cria a tabela
@@ -110,9 +115,9 @@ export default {
             tr.appendChild(td_name)
             tr.appendChild(td_preco)
 
-        } else if (this.trTable[i] && listaQuantidades[i] === 0) {
+        } else if (trTable[i] && listaQuantidades[i] === 0) {
             //Se não houver pedidos deleta a tabela vazia
-            this.trbody.removeChild(this.trTable[i]);
+            this.trbody.removeChild(trTable[i]);
             if(this.trbody.firstElementChild === null) {
                 this.carrinhoVazio.classList.replace('hidden', 'inherit')            
                 this.tabela.classList.replace('inherit', 'hidden')
