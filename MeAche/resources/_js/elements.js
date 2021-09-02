@@ -5,6 +5,8 @@ export default {
         this.quantPedido = document.querySelectorAll('.quantPedido');
         this.sendPedido = document.querySelector('#sendPedido');
 
+        this.numPedido = document.querySelector('#novoNumero');
+
         this.subtotal = document.querySelector('#subtotal');
         this.descSubtotal = document.querySelector('#span-subtotal');
         this.closeSubtotal = document.querySelectorAll('.close-subtotal');
@@ -20,18 +22,28 @@ export default {
         this.carrinhoVazio = document.querySelector('#pedido-vazio');
         this.pedidoFeito = document.querySelector('#pedido-feito');
         this.nadaSelecionado = document.querySelector('#nada-selecionado');
+        this.pedir = document.querySelector('#pedir');
 
         this.arrowUp = document.querySelectorAll('.arrowUp');
         this.arrowDown = document.querySelectorAll('.arrowDown');
         this.collapseMenu = document.querySelectorAll(".collapseMenu");
-    },
-    actions() {
-        this.sendPedido.onclick = () => this.verificaPedido();             
-        
+
+        this.trbody = document.getElementById('tablePedidos');
+        this.trTable = document.querySelectorAll('.trTable');
+        this.tdQuant = document.querySelectorAll('.td-quant');
+        this.tdName = document.querySelectorAll('.td-name');
+        this.tdPreco = document.querySelectorAll('.td-preco');
+        },
+    actions() {   
+        this.pedir.onclick = () => this.showDisplay(this.nadaSelecionado);               
         for(let i = 0; i < this.descPratos.length; i++) {
+            this.sendPedido.onclick = () => this.verificaPedido(this.quantPedido[i]);
             this.liPratos[i].onclick = () => this.showDisplay(this.descPratos[i]);            
             this.descClose[i].onclick = () => this.showDisplay(this.descPratos[i]);
-            this.addPedido[i].onclick = () => this.showDisplay(this.descPratos[i]);            
+            this.addPedido[i].onclick = () => {
+                this.showDisplay(this.descPratos[i]); 
+                this.mandarDados();     
+            }       
         }
         //arrows animations
         for(let i = 0; i < this.collapseMenu.length; i++) {

@@ -313,6 +313,10 @@ margin: 0;
   visibility: hidden;
 }
 
+.inherit {
+  visibility: inherit;
+}
+
 #numero-pedido {
   line-height: 50px;
 }
@@ -365,6 +369,17 @@ bottom: 0;
 }
 
 #pedido-feito p {
+  background-color: #da2c2c;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+#nada-selecionado p {
   background-color: #da2c2c;
   width: 100%;
   text-align: center;

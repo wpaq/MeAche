@@ -286,7 +286,7 @@
         </tbody>
       </table>
       <div id="corpo-span-subtotal" class="w3-text-white">
-        <div id="pedido-vazio" class="w3-center w3-container fadeIn animate">
+        <div id="pedido-vazio" class="w3-center w3-container fadeIn animate inherit">
           <li class="w3-jumbo">
             <i class="fa fa-shopping-cart"></i>
           </li>
@@ -320,7 +320,7 @@
         </b>
       </h4>
       <h4 class="w3-container w3-center ">Apresente esse número ao efetuar o pagamento</h4>
-      <p class="w3-center">OK</p>
+      <p class="w3-center" onclick="window.location.reload()">OK</p>
     </div>
   </div>
 
@@ -331,7 +331,7 @@
           <b>Nada Selecionado</b>
         </h4>
         <h4 class="w3-center w3-container">Navegue pelo nosso menu e adicione itens ao carrinho</h4>
-      <div id="pedir" class="w3-center">OK</div>
+      <p id="pedir" class="w3-center">OK</p>
     </div>
   </div>
 
@@ -366,7 +366,7 @@
             <input type="button" class="mais" value='+'/>
           </div>
         </div>
-          <button type="submit" class="addPedido w3-button w3-text-black w3-center" onclick="mandarDados()">
+          <button type="submit" class="addPedido w3-button w3-text-black w3-center">
             <i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO
           </button>       
     </div>
@@ -1342,8 +1342,7 @@
 <script type="text/javascript" src="resources/_js/connection.firebase.js"></script>
 
 <!-- Functions JS -->
-<script type="module" src="resources/_js/main.js"></script>
-<script type="module" src="resources/_js/mostrar.prato.functions.js"></script>
+<!-- <script type="text/javascript" src="resources/_js/mostrar.prato.functions.js"></script> -->
 <script type="module" src="resources/_js/utils.js"></script>
 
 </html>
