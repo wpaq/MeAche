@@ -9,6 +9,11 @@ img {
     border: 0;
 }
 
+.container-main {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .input_checkbox {
     width: 50px;
     height: 50px;

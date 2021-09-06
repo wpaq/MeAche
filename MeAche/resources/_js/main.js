@@ -2,6 +2,7 @@ import elements from "./elements.js";
 import data from "./data.js";
 
 export default {
+  pedido: {},
   start() {
     elements.get.call(this);
     elements.actions.call(this);
@@ -48,15 +49,14 @@ export default {
     };
   },
   createPedidoData() {
-    const pedido = {}
     for(let i = 0; i < this.quantPedido.length; i++) {
       if(this.quantPedido[i].value > 0) {
-        pedido[this.nomePrato[i].innerText] = this.quantPedido[i].value
+        this.pedido[this.nomePrato[i].innerText] = this.quantPedido[i].value
       } else {
-        delete pedido[this.nomePrato[i]]
+        delete this.pedido[this.nomePrato[i].innerText]
       }      
     }
-    return pedido
+    return this.pedido    
   },  
   mandarDados() {
     const trbody = document.getElementById('tablePedidos');
@@ -133,6 +133,8 @@ export default {
         } else if(total != 0){  
           this.pedidoFeito.classList.replace('hidden', 'show')
           this.numPedido.innerText = total;          
+          
+          this.sendPedidoData();
         }      
   },
   sendPedidoData() {
