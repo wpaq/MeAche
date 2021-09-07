@@ -47,7 +47,7 @@ export default {
         }
         //arrows animations
         for(let i = 0; i < this.collapseMenu.length; i++) {
-            this.collapseMenu[i].onclick = () => this.showDisplay(this.collapseMenu[i], this.arrowUp[i], this.arrowDown[i]);
+            this.collapseMenu[i].onclick = () => this.arrowsAnimation(this.collapseMenu[i], this.arrowUp[i], this.arrowDown[i]);
         }
         //subtotal show/hidden
         this.subtotal.onclick = () => this.showDisplay(this.descSubtotal); 

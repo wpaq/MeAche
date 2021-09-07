@@ -197,6 +197,7 @@ span.psw {
 .desc-pratos {
   background-color: #363434;
   position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
@@ -353,6 +354,10 @@ bottom: 0;
   z-index: 1;
   left: 0;
   top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -385,9 +390,8 @@ bottom: 0;
 
 .fundo-span-conteudo-3 {
   background-color:  rgb(30, 30, 30);
-  margin: 50% auto 15% auto;
   border: 1px solid #888;
-  width: 70%;
+  max-width: 200px;
   border-radius : 5px;
   overflow: hidden;
   color: rgb(234, 234, 234);

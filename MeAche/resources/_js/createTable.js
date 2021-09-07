@@ -1,17 +1,18 @@
 getReference().ref('pedidos').on('value', (snapshot) => {
-  const data = snapshot.val();
-  console.log(data)
+  const data = JSON.stringify(snapshot.val());
+  const key = snapshot.key;
+
+  console.log("Data:",  data)
+  console.log("Key:",  key)
+
+
+  console.log()
 
   const trbody = document.querySelector('#pedidos_pendentes');
-  let obj = {};
 
   snapshot.forEach(function (item) {
-    console.log(item.val())
-    
-    obji[item].push(item.val())
-
-
     var tr = document.createElement('tr');
+    var li = document.createElement('li');
     var td_checkbox = document.createElement('td');
     var td_pedidos = document.createElement('td');
     var td_num_pedidos = document.createElement('td');
@@ -25,11 +26,12 @@ getReference().ref('pedidos').on('value', (snapshot) => {
 
     // li's //
       var lis = [];
-      for(x = 1; x <= 29; x++) {
-          var createLis = $(`<li>${item.val()}</li>`);
+      for(let x = 0; x < 1; x++) {
+          var createLis = $(`<li>${data}</li>`);
           lis.push(createLis);
       }
-      $(ul).append(lis);
+      li = item.key + ": " + item.val()
+      $(ul).append(li);
     //! li's !//
 
     // appends childs //

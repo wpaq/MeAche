@@ -57,6 +57,13 @@ export default {
       }      
     }
     return this.pedido    
+  },
+  writeUserData(userId, pedido) {
+    for(let i = 0; i < this.quantPedido.length; i++) {
+      getReference().ref('users/' + userId).set({
+        pedido: pedido
+      });    
+    }    
   },  
   mandarDados() {
     const trbody = document.getElementById('tablePedidos');
@@ -138,7 +145,8 @@ export default {
         }      
   },
   sendPedidoData() {
-    getReference().ref().child('pedidos').push(this.createPedidoData())
+    //getReference().ref().child('pedidos').push(this.createPedidoData())
+    this.writeUserData('Mason', this.createPedidoData())
         
     console.log('Enviado')
   }
