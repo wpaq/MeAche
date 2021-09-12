@@ -9,6 +9,10 @@ img {
     border: 0;
 }
 
+.users-table {
+    max-width: 500px;
+}
+
 .container-main {
     max-width: 500px;
     margin: 0 auto;
@@ -19,15 +23,13 @@ img {
     height: 50px;
 }
 
-.td_pedidos {
-    display: block;
+#td_pedidos {
     min-width: 140px;
 }
 
 #td_num_pedidos {
     min-width: 140px;
 }
-
 
 .ulClass {
     overflow: hidden;
