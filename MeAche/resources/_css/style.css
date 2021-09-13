@@ -2,6 +2,7 @@ body {
   margin: 0 auto;
   padding: 0;
   background-color: rgb(30, 30, 30);
+  font-family: Segoe UI;
 }
 
 /* Imagem da Logo*/
@@ -13,6 +14,16 @@ body {
   width: 15vh;
 }
 /* Imagem da Logo*/
+
+#adminPage {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fff;
+  max-width: 500px;
+}
+
 
 /* Tela Pratos */
 .quantidade {
@@ -85,6 +96,8 @@ body {
   border-width: 4px;
   border-color: #F05F40;
 }
+
+
 
 /* Seta do Cardápio */
 .arrowDown {

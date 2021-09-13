@@ -15,64 +15,34 @@
     <link rel="stylesheet" href="resources/_frameworks/fontawesome/css/all.min.css">
 
     <!-- Custom style CSS -->
-    <link rel="stylesheet" type="text/css" href="resources/_css/style.admin.css">
+    <link rel="stylesheet" type="text/css" href="resources/_css/style.css">
     <link rel="stylesheet" href="resources/_css/w3.css">
     <link rel="stylesheet" href="resources/_css/icon.css">
     <link rel="stylesheet" type="text/css" href="resources/_css/animate.css">
 </head>
 
-<body>
+<body id="adminPage">
     <main class="container-main">
-        <div id="logo" class="w3-center"> <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png"> </div>
-        <hr id="barra">
-        
-        <div>
-            <button id="collapse6" class="btn btn-secondary accordion-toggle estiloButton" type="button" aria-expanded="true" data-toggle="collapse" data-target="#collapseOne" onclick="arrows6()">
-                <span>Pedidos Pendentes</span>
-                <i class="fas fa-angle-down w3-right" id="arrowDown6" style="display: none;"></i>
-                <i class="fas fa-angle-up w3-right" id="arrowUp6" style="display: block;"></i>
-            </button>
+        <div id="logo" class="w3-center"> 
+            <img id="img-logo" class="img-fluid w3-center" src="resources/_img/logo.png"> 
         </div>
-            
-            <div class="collapse in show" id="collapseOne">
-                <table class="table users-table w3-center">
-                    <thead>
-                        <tr>
-                            <th scope="row"></th>
-                            <th>Pedidos</td>
-                            <th>Nº Pedidos</td>
-                        </tr>
-                    </thead>
-                    <tbody id="pedidos_pendentes">
-                        
-                    </tbody>
-                </table>
-            </div>
-            <br>
-            <br>
-            <div>
-                <button id="collapse7" class="btn btn-secondary accordion-toggle estiloButton" aria-expanded="false" type="button" data-toggle="collapse" data-target="#collapseTwo" onclick="arrows7()">
-                    <span>Pedidos Concluídos</span>
-                    <i class="fas fa-angle-down w3-right" id="arrowDown7" style="display: block;"></i>
-                    <i class="fas fa-angle-up w3-right" id="arrowUp7" style="display: none;"></i>
-                </button>
-            </div>
-            <div class="collapse" id="collapseTwo">
-                <table class="table users-table">
-                    <thead class="w3-center">
-                        <tr>
-                            <th scope="row"></th>
-                            <th>Pedidos</td>
-                            <th>Nº Pedidos</td>
-                        </tr>
-                    </thead>
-                    <tbody id="pedidos_concluidos" class="w3-center">
-                    </tbody>
-                </table>
-            </div>
+
+        <hr id="barra">        
+
+        <div class="adminPedidos">
+            <table class="table w3-center">
+                <thead>
+                    <tr>
+                        <th> Pedidos</td>
+                    </tr>
+                </thead>
+                <tbody id="pedidos_pendentes">                        
+                </tbody>
+            </table>
         </div>
     </main>
 </body>
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="resources/_frameworks/jquery/jquery-3.3.1.slim.min.js"></script>
 <script src="resources/_frameworks/jquery/popper.min.js"></script>
@@ -87,10 +57,6 @@
 <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
 <script type="text/javascript" src="resources/_js/connection.firebase.js"></script>
 
-<script src="resources/_js/createTable.js"></script>
-
-<!-- Functions JS -->
-<!-- <script type="text/javascript" src="resources/_js/mostrar.prato.functions.js"></script> -->
-<script type="module" src="resources/_js/utils.js"></script>
+<script src="resources/_js/data_show.js"></script>
 
 </html>
