@@ -1,7 +1,12 @@
 # MeAche
 
 ## Descrição do Projeto
-<p align="center">Sistema de pedidos online para lanchonete. Iniciado em meu estágio na NexTI(FAP/CE) em 2018 junto aos meus colegas. Essa é a versão refatorada utilizando JS module feita por mim.</p>
+<p >Sistema de pedidos online para lanchonete. 
+<br>Iniciado em meu estágio na NexTI(FAP/CE) em 2018 junto aos meus colegas. 
+<br>Essa é a versão refatorada utilizando JS module feita por mim.
+<br>Segue abaixo repositório do projeto em 2018: 
+<br><a href="https://github.com/IanLopesB/MeAche.git">Repo</a>
+</p>
 
 <h4 align="center"> 
 	🚧  MeAche 🚀 Concluído  🚧
