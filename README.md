@@ -26,6 +26,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <br>
 
+## Demo
+<h2>User Page</h2>
+<img src="https://github.com/wpaq/MeAche/blob/main/MeAche/resources/_img/userPage.JPG">
+<a href="https://me-ache-6c62e.web.app/user.html">DEMO</a>
+
+<h2>Admin Page</h2>
+<img src="https://github.com/wpaq/MeAche/blob/main/MeAche/resources/_img/adminPage.JPG">
+<a href="https://me-ache-6c62e.web.app/admin.html">DEMO</a>
+
 ## Autor
 
 <a href="https://blog.rocketseat.com.br/author/thiago/">
@@ -40,14 +49,4 @@ Feito com ❤️ por Wallyson Pablo -- Entre em contato!
 [![Gmail Badge](https://img.shields.io/badge/-wallysonpabloo@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:wallysonpabloo@gmail.com)](mailto:wallysonpabloo@gmail.com)
 
 <br>
-
-## Demo
-<h2>User Page</h2>
-<img src="https://github.com/wpaq/MeAche/blob/main/MeAche/resources/_img/userPage.JPG">
-<a href="https://me-ache-6c62e.web.app/user.html">DEMO</a>
-
-<h2>Admin Page</h2>
-<img src="https://github.com/wpaq/MeAche/blob/main/MeAche/resources/_img/adminPage.JPG">
-<a href="https://me-ache-6c62e.web.app/admin.html">DEMO</a>
-
 
