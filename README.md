@@ -5,7 +5,7 @@
 <br>Iniciado em meu estágio na NexTI(FAP/CE) em 2018 junto aos meus colegas. 
 <br>
 -----
-<br>Segue abaixo o repositório do projeto em 2018: 
+<br>Segue abaixo o antigo repositório do projeto em 2018: 
 <br><a href="https://github.com/IanLopesB/MeAche.git">Repo</a>
 <br>
 ------
